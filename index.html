@@ -1,189 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>The Private Equity Advantage</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
-:root {
-    --bg: #f7f6f3;
-    --text: #1a1a1a;
-    --muted: #6b7280;
-    --line: #e5e7eb;
+:root{
+  --bg: #f7f6f3;        /* warm off-white */
+  --paper: #ffffff;     /* cards */
+  --ink: #141414;       /* body text */
+  --muted: #5f6672;     /* secondary text */
+  --line: #e6e3dc;      /* dividers */
+  --navy: #102a43;      /* restrained “institutional” */
+  --navy2:#0b2236;      /* slightly deeper */
+  --accent:#8a6b2f;     /* muted gold (very restrained) */
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{ box-sizing:border-box; margin:0; padding:0; }
+body{
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.55;
 }
 
-body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
+a{ color: inherit; text-decoration: none; }
+a:hover{ text-decoration: underline; }
+
+.wrap{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 80px 24px;
+/* HEADER */
+header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(247,246,243,0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--line);
+}
+.navbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 18px 0;
+  gap: 24px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  min-width: 260px;
+}
+.brand-mark{
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family: "Libre Baskerville", serif;
+  color: var(--navy);
+  font-weight: 700;
+}
+.brand-title{
+  font-family: "Libre Baskerville", serif;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+.brand-sub{
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
 }
 
-h1, h2, h3 {
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 400;
-    letter-spacing: -0.5px;
+nav{
+  display:flex;
+  align-items:center;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content:flex-end;
+}
+.navlink{
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: 0.2px;
+}
+.navlink strong{ color: var(--ink); font-weight: 600; }
+.pill{
+  border:1px solid var(--line);
+  background: var(--paper);
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  color: var(--navy);
+  font-weight: 600;
+}
+.pill:hover{ text-decoration:none; border-color: #d7d1c6; }
+
+/* HERO */
+.hero{
+  position: relative;
+  padding: 84px 0 56px 0;
+  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(16,42,67,0.10), rgba(16,42,67,0.00));
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg, rgba(247,246,243,0.98), rgba(247,246,243,0.80)),
+    url("assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.65; /* if no image exists, harmless */
+  pointer-events:none;
+}
+.hero-inner{
+  position: relative;
+  display:grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
+  align-items: end;
+  padding: 0 0 10px 0;
+}
+.kicker{
+  font-size: 12px;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  color: var(--navy);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.h1{
+  font-family: "Libre Baskerville", serif;
+  font-size: 44px;
+  line-height: 1.15;
+  letter-spacing: -0.8px;
+  margin-bottom: 14px;
+}
+.h2{
+  font-family: "Libre Baskerville", serif;
+  font-size: 26px;
+  color: var(--navy2);
+  letter-spacing: -0.4px;
+  margin-bottom: 18px;
+}
+.lede{
+  font-size: 16px;
+  color: var(--muted);
+  max-width: 58ch;
+}
+.hero-card{
+  background: rgba(255,255,255,0.78);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 22px 22px;
+}
+.hero-card h3{
+  font-family: "Libre Baskerville", serif;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.bullets{
+  list-style: none;
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+.bullets li{
+  display:flex;
+  gap: 10px;
+  align-items:flex-start;
+  color: var(--ink);
+  font-size: 14px;
+}
+.bullets li::before{
+  content:"";
+  width: 8px;
+  height: 8px;
+  margin-top: 7px;
+  border-radius: 99px;
+  background: var(--accent);
+  flex: 0 0 auto;
+  opacity: 0.85;
 }
 
-h1 {
-    font-size: 42px;
-    margin-bottom: 24px;
+/* SECTION */
+section{
+  padding: 64px 0;
+}
+.section-title{
+  font-size: 12px;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.section-head{
+  font-family: "Libre Baskerville", serif;
+  font-size: 26px;
+  letter-spacing: -0.4px;
+  margin-bottom: 14px;
+  color: var(--navy2);
+}
+.rule{ border-top: 1px solid var(--line); margin: 22px 0 0 0; }
+
+/* PILLARS */
+.pillars{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 18px;
+}
+.pillar{
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 18px 18px;
+}
+.pillar h4{
+  font-size: 14px;
+  color: var(--navy);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.pillar p{
+  color: var(--muted);
+  font-size: 14px;
 }
 
-h2 {
-    font-size: 28px;
-    margin-bottom: 24px;
+/* MODULE GRID */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 18px;
+}
+.card{
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px 20px;
+}
+.card h4{
+  font-family: "Libre Baskerville", serif;
+  font-size: 18px;
+  letter-spacing: -0.3px;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.card p{
+  color: var(--muted);
+  font-size: 14px;
 }
 
-h3 {
-    font-size: 20px;
-    margin-bottom: 8px;
+/* AUTHORITY BLOCK */
+.authority{
+  background: linear-gradient(180deg, rgba(16,42,67,0.06), rgba(16,42,67,0.00));
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+blockquote{
+  border-left: 3px solid rgba(138,107,47,0.6);
+  padding-left: 16px;
+  margin-top: 18px;
+  color: var(--navy2);
+  font-family: "Libre Baskerville", serif;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-.subheading {
-    font-size: 18px;
-    margin-bottom: 32px;
-    color: var(--muted);
+/* FOOTER */
+footer{
+  padding: 40px 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+.footer-row{
+  display:flex;
+  justify-content:space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+.footer-links{
+  display:flex;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
-.section {
-    margin-top: 80px;
-    padding-top: 60px;
-    border-top: 1px solid var(--line);
-}
-
-ul {
-    margin-top: 16px;
-    margin-left: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-p {
-    margin-bottom: 16px;
-}
-
-.muted {
-    color: var(--muted);
-}
-
-.module {
-    margin-bottom: 32px;
-}
-
-footer {
-    margin-top: 120px;
-    padding-top: 40px;
-    border-top: 1px solid var(--line);
-    font-size: 14px;
-    color: var(--muted);
+/* RESPONSIVE */
+@media (max-width: 920px){
+  .hero-inner{ grid-template-columns: 1fr; }
+  .pillars{ grid-template-columns: 1fr; }
+  .grid{ grid-template-columns: 1fr; }
+  .brand{ min-width: auto; }
 }
 </style>
 </head>
+
 <body>
 
-<div class="container">
+<header>
+  <div class="wrap">
+    <div class="navbar">
+      <div class="brand">
+        <div class="brand-mark">T</div>
+        <div>
+          <div class="brand-title">The Private Equity Advantage</div>
+          <div class="brand-sub">Private equity discipline applied to operating businesses</div>
+        </div>
+      </div>
 
-<h1>The Private Equity Advantage</h1>
+      <nav aria-label="Primary">
+        <a class="navlink" href="#principle"><strong>Principle</strong></a>
+        <a class="navlink" href="#tests">Stress Tests</a>
+        <a class="navlink" href="#whatnot">What This Is Not</a>
+        <a class="navlink" href="#institutional">Institutional</a>
+        <a class="pill" href="#pilot">H&amp;S Pilot</a>
+      </nav>
+    </div>
+  </div>
+</header>
 
-<h2>Private Equity Stress Tests<br>For Operating Businesses</h2>
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <div>
+        <div class="kicker">The Private Equity Advantage</div>
+        <div class="h1">Private Equity Stress Tests<br>For Operating Businesses</div>
+        <div class="lede">
+          We apply institutional discipline to identify and eliminate structural weakness across capital, governance and risk.
+        </div>
+      </div>
 
-<p>We apply institutional discipline to identify and eliminate structural weakness across capital, governance and risk.</p>
-
-<p>For owner-operators, that means:</p>
-
-<ul>
-<li>Fewer expensive mistakes</li>
-<li>Clearer capital decisions</li>
-<li>Stronger bank positioning</li>
-<li>Fewer hidden vulnerabilities</li>
-<li>More predictable cash flow</li>
-</ul>
-
-<div class="section">
-
-<h2>Operating Principle</h2>
-
-<p>Institutional capital rewards discipline, not optimism.</p>
-
-<p>Most businesses do not fail because of one dramatic error. They weaken incrementally.</p>
-
-<p>Capital is misallocated. Governance drifts. Forecasts stretch. Risk concentrates. Cash tightens.</p>
-
-<p>Structural weakness compounds quietly.</p>
-
-<p>The Private Equity Advantage applies institutional discipline before weakness becomes cost.</p>
-
+      <div class="hero-card">
+        <h3>For owner-operators, that means</h3>
+        <ul class="bullets">
+          <li>Fewer expensive mistakes</li>
+          <li>Clearer capital decisions</li>
+          <li>Stronger bank positioning</li>
+          <li>Fewer hidden vulnerabilities</li>
+          <li>More predictable cash flow</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="section">
+<section id="principle">
+  <div class="wrap">
+    <div class="section-title">Operating Principle</div>
+    <div class="section-head">Discipline, then upside</div>
+    <p>
+      Institutional capital rewards discipline, not optimism. Most businesses do not fail because of one dramatic error.
+      They weaken incrementally.
+    </p>
+    <p class="muted">
+      Capital is misallocated. Governance drifts. Forecasts stretch. Risk concentrates. Cash tightens.
+      Structural weakness compounds quietly.
+    </p>
 
-<h2>The Six Stress Tests</h2>
+    <div class="pillars">
+      <div class="pillar">
+        <h4>Constraint</h4>
+        <p>We narrow structural error before it becomes cost.</p>
+      </div>
+      <div class="pillar">
+        <h4>Clarity</h4>
+        <p>Exposure is surfaced early, not after it compounds.</p>
+      </div>
+      <div class="pillar">
+        <h4>Discipline</h4>
+        <p>Boundaries reset. Operating standards rise.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="module">
-<h3>Safety Intelligence</h3>
-<p>Operational accountability and regulatory exposure mapping. Identifies unmanaged compliance risk and structural safety blind spots.</p>
-</div>
+<section id="tests">
+  <div class="wrap">
+    <div class="section-title">The Six Stress Tests</div>
+    <div class="section-head">Defined interventions</div>
+    <p class="muted">
+      Each Stress Test applies institutional review to a defined operating domain. Finite scope. Structured output.
+      Exposure identified. Capital impact clarified. Boundaries reset.
+    </p>
 
-<div class="module">
-<h3>Employment Risk Intelligence</h3>
-<p>Workforce liability, key-person dependency and contractual exposure analysis. Tests resilience beyond informal arrangements.</p>
-</div>
+    <div class="grid">
+      <div class="card">
+        <h4>Safety Intelligence</h4>
+        <p>Operational accountability and regulatory exposure mapping. Identifies unmanaged compliance risk and structural safety blind spots.</p>
+      </div>
+      <div class="card">
+        <h4>Employment Risk Intelligence</h4>
+        <p>Workforce liability, key-person dependency and contractual exposure analysis. Tests resilience beyond informal arrangements.</p>
+      </div>
+      <div class="card">
+        <h4>Property and Asset Risk</h4>
+        <p>Asset exposure, lease risk and capital structure review. Examines long-term obligations against cash durability.</p>
+      </div>
+      <div class="card">
+        <h4>Supplier Dependency Audit</h4>
+        <p>Concentration, substitution risk and operational reliance testing. Identifies single points of failure across critical inputs.</p>
+      </div>
+      <div class="card">
+        <h4>Financial Architecture</h4>
+        <p>Cash conversion discipline, forecast credibility and capital allocation structure. Tests whether reported performance reflects economic reality.</p>
+      </div>
+      <div class="card">
+        <h4>Strategic Judgement Framework</h4>
+        <p>Decision-rights clarity, capital gating and governance alignment. Clarifies how capital is deployed and where exposure accumulates.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="module">
-<h3>Property and Asset Risk</h3>
-<p>Asset exposure, lease risk and capital structure review. Examines long-term obligations against cash durability.</p>
-</div>
+<section id="whatnot">
+  <div class="wrap">
+    <div class="section-title">What This Is Not</div>
+    <div class="section-head">No theatre</div>
+    <p>
+      This is not a transformation programme. There is no motivational overlay. No growth narrative.
+    </p>
+    <p class="muted">
+      Each Stress Test narrows structural error. Upside follows discipline.
+    </p>
+  </div>
+</section>
 
-<div class="module">
-<h3>Supplier Dependency Audit</h3>
-<p>Concentration, substitution risk and operational reliance testing. Identifies single points of failure across critical inputs.</p>
-</div>
+<section id="institutional" class="authority">
+  <div class="wrap">
+    <div class="section-title">Institutional Thinking. External Application.</div>
+    <div class="section-head">A distillation of what matters</div>
+    <p>
+      The Private Equity Advantage reflects twenty-five years in private equity working alongside founders, boards and management teams across operating businesses.
+    </p>
+    <p class="muted">
+      Capital was deployed. Governance was tightened. Exposure was reduced. Value compounded.
+    </p>
+    <blockquote>
+      Durable businesses are not built by optimism. They are built by disciplined constraint.
+    </blockquote>
+  </div>
+</section>
 
-<div class="module">
-<h3>Financial Architecture</h3>
-<p>Cash conversion discipline, forecast credibility and capital allocation structure. Tests whether reported performance reflects economic reality.</p>
-</div>
-
-<div class="module">
-<h3>Strategic Judgement Framework</h3>
-<p>Decision-rights clarity, capital gating and governance alignment. Clarifies how capital is deployed and where exposure accumulates.</p>
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>Institutional Thinking. External Application.</h2>
-
-<p>The Private Equity Advantage reflects twenty-five years in private equity working alongside founders, boards and management teams across operating businesses.</p>
-
-<p>Capital was deployed. Governance was tightened. Exposure was reduced. Value compounded.</p>
-
-<p>This platform is a distillation of what matters most in building durable advantage.</p>
-
-</div>
+<section id="pilot">
+  <div class="wrap">
+    <div class="section-title">H&amp;S Safety Intelligence</div>
+    <div class="section-head">Invitation-only pilot</div>
+    <p class="muted">
+      The H&amp;S Safety Intelligence pilot is currently limited to invitation.
+      Assessment and intake will sit on the dedicated H&amp;S sub-site.
+    </p>
+  </div>
+</section>
 
 <footer>
-The Private Equity Advantage
+  <div class="wrap">
+    <div class="footer-row">
+      <div>© The Private Equity Advantage</div>
+      <div class="footer-links">
+        <a href="#principle">Principle</a>
+        <a href="#tests">Stress Tests</a>
+        <a href="#institutional">Institutional</a>
+      </div>
+    </div>
+  </div>
 </footer>
-
-</div>
 
 </body>
 </html>
