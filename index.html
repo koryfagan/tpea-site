@@ -1,138 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Digital Capital Group</title>
-  <meta name="description" content="Digital Capital Group embeds private equity–grade judgement into SME operating systems—governance and decision architecture inside workflows." />
-  <meta name="robots" content="index,follow" />
-  <meta property="og:title" content="Digital Capital Group" />
-  <meta property="og:description" content="Institutional governance inside SME workflows." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="og.png" />
-  <link rel="icon" href="favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Serif:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Capital Group</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f8f8f6;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 500;
+    margin-top: 0;
+    color: #333;
+}
+
+.section {
+    margin-top: 120px;
+}
+
+.section h3 {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    color: #666;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.columns p {
+    margin-top: 0;
+}
+
+.footer {
+    margin-top: 140px;
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width: 800px) {
+    .hero h1 { font-size: 36px; }
+    .hero h2 { font-size: 26px; }
+    .columns { grid-template-columns: 1fr; }
+}
+</style>
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Digital Capital Group">
-        <img src="logo.png" alt="Digital Capital Group" class="logo" />
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="#what">What we do</a>
-        <a href="#doctrine">Doctrine</a>
-        <a href="#applied">Applied areas</a>
-        <a href="#principal">Principal</a>
-      </nav>
-    </div>
-  </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container">
-        <h1>Institutional governance inside SME workflows.</h1>
-        <p class="lede">
-          Digital Capital Group embeds private equity–grade judgement into operating systems, reducing fragility and improving decision integrity across core business functions.
+<div class="container">
+
+    <div class="hero">
+        <h1>We embed discipline into SME operating systems.</h1>
+        <h2>We convert structure into advantage.</h2>
+    </div>
+
+    <div class="section">
+        <h3>What This Looks Like in Practice</h3>
+        <div class="columns">
+            <p>
+            Clear decision rights and escalation paths across ownership, management and governance.
+            </p>
+            <p>
+            Financial and operational dashboards that drive behaviour, not just reporting.
+            </p>
+            <p>
+            Embedded judgement frameworks across risk, capital allocation and growth.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Why It Matters</h3>
+        <p>
+        Most SMEs accumulate tools. Few build systems.  
+        Without structure, performance becomes inconsistent and risk compounds quietly.
         </p>
-      </div>
-    </section>
-
-    <section class="section" id="what">
-      <div class="container">
-        <h2>What We Do</h2>
-
-        <div class="cards">
-          <article class="card">
-            <h3>Workflow Institutionalisation</h3>
-            <p>We formalise decision surfaces inside growing companies.</p>
-            <ul>
-              <li>Execution is structured.</li>
-              <li>Accountability is explicit.</li>
-              <li>Governance is embedded — not advisory.</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Private Equity Discipline</h3>
-            <p>Every initiative is evaluated through:</p>
-            <ul>
-              <li>Capital efficiency</li>
-              <li>Structural defensibility</li>
-              <li>Workflow gravity</li>
-              <li>Downside containment</li>
-            </ul>
-            <p class="small">Operational judgement becomes systemic rather than personality-driven.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section doctrine" id="doctrine">
-      <div class="container">
-        <h2>Our Doctrine</h2>
-
-        <div class="manifesto">
-          <p class="mline">Capability commoditises.<br><span>Structural advantage does not.</span></p>
-          <p class="mline">Workflow endures.<br><span>Judgement determines outcomes.</span></p>
-          <p class="mline">Most SMEs optimise tools.<br><span>We design decision architecture.</span></p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="applied">
-      <div class="container">
-        <h2>Applied Areas</h2>
-        <p class="lede2">Governance and decision architecture embedded across:</p>
-
-        <ul class="pill-list">
-          <li>Safety and regulatory exposure</li>
-          <li>Employment and people risk</li>
-          <li>Property and asset oversight</li>
-          <li>Supplier and counterparty review</li>
-          <li>Operational capital allocation</li>
-          <li>Strategic execution and downside containment</li>
-        </ul>
-
-        <p class="note">We institutionalise judgement where operational fragility typically accumulates.</p>
-      </div>
-    </section>
-
-    <section class="section muted" id="principal">
-      <div class="container">
-        <h2>Principal</h2>
-        <div class="two-col">
-          <div>
-            <p>
-              Kory Fagan is a private equity–trained operator focused on embedding structural governance inside growing businesses.
-            </p>
-            <p>
-              His work centres on capital discipline, risk containment, and decision architecture within mid-market operating environments.
-            </p>
-            <p>
-              Digital Capital Group reflects that discipline applied systematically rather than episodically.
-            </p>
-          </div>
-          <div class="contact">
-            <div class="contact-box">
-              <p class="label">Contact</p>
-              <p class="mono"><a href="mailto:info@digitalcapitalgroup.co.nz">info@digitalcapitalgroup.co.nz</a></p>
-              <p class="small">Relationship-led and selective by design.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span>© 2026 Digital Capital Group</span>
+        <p>
+        Discipline is not bureaucracy. It is clarity.
+        </p>
     </div>
-  </footer>
+
+    <div class="section">
+        <h3>Applied Systems</h3>
+        <div class="columns">
+            <p><strong>Safety Intelligence</strong><br>Embedding operational accountability and regulatory discipline.</p>
+            <p><strong>Employment Risk Intelligence</strong><br>Strengthening workforce governance and decision clarity.</p>
+            <p><strong>Property & Asset Risk</strong><br>Structuring exposure, capital allocation and control.</p>
+            <p><strong>Supplier Audit Systems</strong><br>Reducing fragility across external dependencies.</p>
+            <p><strong>Financial Architecture</strong><br>Capital discipline embedded in reporting and planning.</p>
+            <p><strong>Strategic Judgement Layer</strong><br>Translating information into structured decision advantage.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Principal</h3>
+        <p>
+        Digital Capital Group is led by Kory Fagan, a private equity operator applying institutional discipline to mid-market operating environments.
+        </p>
+        <p>
+        The objective is not advisory output. It is structural advantage.
+        </p>
+    </div>
+
+    <div class="footer">
+        © Digital Capital Group
+    </div>
+
+</div>
+
 </body>
 </html>
