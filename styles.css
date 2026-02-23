@@ -1,7 +1,7 @@
 :root{
   --ink: #0b1220;
   --navy: #0b1f3a;
-  --accent: #2aa6b3;          /* change if you want (deep red/navy etc.) */
+  --accent: #2aa6b3;
   --bg: #ffffff;
   --muted: rgba(0,0,0,.02);
 
@@ -13,7 +13,9 @@
   --border-soft: rgba(0,0,0,.06);
 }
 
-*{ box-sizing: border-box; }
+*{
+  box-sizing: border-box;
+}
 
 html{
   -webkit-text-size-adjust: 100%;
@@ -29,8 +31,14 @@ body{
   line-height: 1.6;
 }
 
-a{ color: inherit; text-decoration: none; }
-a:hover{ opacity: .9; }
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover{
+  opacity: .9;
+}
 
 .wrap{
   max-width: var(--max);
@@ -38,7 +46,10 @@ a:hover{ opacity: .9; }
   padding: 0 var(--pad-mobile);
 }
 
-/* NAV */
+/* =========================
+   NAV
+========================= */
+
 .nav{
   position: sticky;
   top: 0;
@@ -62,6 +73,17 @@ a:hover{ opacity: .9; }
   white-space: nowrap;
 }
 
+.brand--logo{
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand__img{
+  height: 28px;      /* Adjust if needed */
+  width: auto;
+  display: block;
+}
+
 .nav__links{
   display: none;
   gap: 26px;
@@ -73,7 +95,10 @@ a:hover{ opacity: .9; }
   padding: 6px 0;
 }
 
-/* BUTTONS */
+/* =========================
+   BUTTONS
+========================= */
+
 .btn{
   display: inline-flex;
   align-items: center;
@@ -82,8 +107,9 @@ a:hover{ opacity: .9; }
   font-weight: 650;
   font-size: 14px;
   border: 1px solid transparent;
-  border-radius: 0; /* square = institutional */
+  border-radius: 0;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .btn--primary{
@@ -108,7 +134,10 @@ a:hover{ opacity: .9; }
   border-color: var(--border);
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
+
 .hero{
   position: relative;
   min-height: 72vh;
@@ -143,7 +172,7 @@ a:hover{ opacity: .9; }
 .hero__title{
   margin: 14px 0 0;
   color: #fff;
-  font-family: Georgia, "Times New Roman", serif; /* authority */
+  font-family: Georgia, "Times New Roman", serif;
   font-weight: 500;
   letter-spacing: -0.02em;
   line-height: 1.05;
@@ -170,7 +199,10 @@ a:hover{ opacity: .9; }
   font-size: 13px;
 }
 
-/* SECTIONS */
+/* =========================
+   SECTIONS
+========================= */
+
 .section{
   padding: 84px 0;
 }
@@ -191,15 +223,23 @@ a:hover{ opacity: .9; }
   max-width: 74ch;
 }
 
-/* GRID + CARDS */
+/* =========================
+   GRID + CARDS
+========================= */
+
 .grid{
   margin-top: 28px;
   display: grid;
   gap: 14px;
 }
 
-.grid--2{ grid-template-columns: 1fr; }
-.grid--3{ grid-template-columns: 1fr; }
+.grid--2{
+  grid-template-columns: 1fr;
+}
+
+.grid--3{
+  grid-template-columns: 1fr;
+}
 
 .card{
   border: 1px solid var(--border);
@@ -228,7 +268,10 @@ a:hover{ opacity: .9; }
   margin: 6px 0;
 }
 
-/* CONTACT ACTIONS */
+/* =========================
+   CONTACT
+========================= */
+
 .actions{
   margin-top: 18px;
   display: flex;
@@ -242,7 +285,10 @@ a:hover{ opacity: .9; }
   color: rgba(0,0,0,.60);
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
+
 .footer{
   border-top: 1px solid var(--border-soft);
   padding: 28px 0;
@@ -261,18 +307,39 @@ a:hover{ opacity: .9; }
   gap: 18px;
 }
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (min-width: 860px){
-  .wrap{ padding: 0 var(--pad-desktop); }
-  .nav__links{ display: flex; }
 
-  .hero__title{ font-size: 62px; }
-  .hero__inner{ padding: 120px 0; }
+  .wrap{
+    padding: 0 var(--pad-desktop);
+  }
 
-  .section{ padding: 120px 0; }
+  .nav__links{
+    display: flex;
+  }
 
-  .grid--2{ grid-template-columns: repeat(2, 1fr); }
-  .grid--3{ grid-template-columns: repeat(3, 1fr); }
+  .hero__title{
+    font-size: 62px;
+  }
+
+  .hero__inner{
+    padding: 120px 0;
+  }
+
+  .section{
+    padding: 120px 0;
+  }
+
+  .grid--2{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--3{
+    grid-template-columns: repeat(3, 1fr);
+  }
 
   .footer__inner{
     flex-direction: row;
@@ -282,5 +349,7 @@ a:hover{ opacity: .9; }
 }
 
 @media (max-width: 420px){
-  .hero__title{ font-size: 38px; }
+  .hero__title{
+    font-size: 38px;
+  }
 }
