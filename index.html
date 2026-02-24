@@ -16,20 +16,17 @@
 </head>
 
 <body>
+
   <!-- NAV -->
   <header class="nav">
     <div class="wrap nav__inner">
       <a class="brand brand--logo" href="#top" aria-label="The Private Equity Advantage home">
-        <img
-          src="tpea-logo.png"
-          alt="The Private Equity Advantage"
-          class="brand__img"
-        />
+        <img src="tpea-logo.png" alt="The Private Equity Advantage" class="brand__img" />
       </a>
 
       <nav class="nav__links" aria-label="Primary">
         <a href="#approach">Architecture</a>
-        <a href="#deliverables">Systems</a>
+        <a href="#systems">Systems</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -37,15 +34,15 @@
     </div>
   </header>
 
-  <!-- HERO -->
   <main id="top">
-    <section class="hero" aria-label="Hero">
+
+    <!-- HERO -->
+    <section class="hero">
       <div class="wrap hero__inner">
         <div class="kicker">Embedded risk architecture for NZ SMEs</div>
 
         <h1 class="hero__title">
-          When judgement begins,
-          <br />
+          When judgement begins,<br />
           explanation no longer matters.
         </h1>
 
@@ -66,7 +63,7 @@
       </div>
     </section>
 
-    <!-- APPROACH -->
+    <!-- ARCHITECTURE -->
     <section id="approach" class="section">
       <div class="wrap">
         <header class="section__header">
@@ -98,7 +95,7 @@
     </section>
 
     <!-- SYSTEMS -->
-    <section id="deliverables" class="section section--muted">
+    <section id="systems" class="section section--muted">
       <div class="wrap">
         <header class="section__header">
           <h2>The Six Embedded Systems</h2>
@@ -106,19 +103,27 @@
         </header>
 
         <div class="grid grid--3">
+
+          <!-- Row 1 -->
+          <article class="card">
+            <h3>H&amp;S Stress Test</h3>
+            <p>Pre-incident interpretive read of documented safety standing under regulatory scrutiny.</p>
+          </article>
+
           <article class="card">
             <h3>Property Risk Intelligence (PRI)</h3>
             <p>Time-stamped physical-site risk memory designed for insurers, councils, and buyers.</p>
           </article>
 
           <article class="card">
-            <h3>Employment Risk Intelligence (ERI)</h3>
-            <p>Director-level employment defensibility before disputes arise.</p>
-          </article>
-
-          <article class="card">
             <h3>Insurance Boundary Control (IBC)</h3>
             <p>Explicit behavioural boundaries where insurance coverage fails or voids.</p>
+          </article>
+
+          <!-- Row 2 -->
+          <article class="card">
+            <h3>Employment Risk Intelligence (ERI)</h3>
+            <p>Director-level employment defensibility before disputes arise.</p>
           </article>
 
           <article class="card">
@@ -127,14 +132,10 @@
           </article>
 
           <article class="card">
-            <h3>H&amp;S Stress Test</h3>
-            <p>Pre-incident interpretive read of documented safety standing under scrutiny.</p>
-          </article>
-
-          <article class="card">
             <h3>Transaction / Exit Readiness (TER)</h3>
             <p>Reconciliation of risk artefacts for hostile transaction environments.</p>
           </article>
+
         </div>
       </div>
     </section>
@@ -158,10 +159,11 @@
         </div>
 
         <div class="smallprint">
-          This is not advisory. Engagement scope is system-specific and authority-bound.
+          Engagement scope is system-specific and authority-bound.
         </div>
       </div>
     </section>
+
   </main>
 
   <!-- FOOTER -->
@@ -178,5 +180,6 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
