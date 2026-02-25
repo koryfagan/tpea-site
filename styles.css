@@ -79,7 +79,7 @@ a:hover{
 }
 
 .brand__img{
-  height: 28px;      /* Adjust if needed */
+  height: 28px;
   width: auto;
   display: block;
 }
@@ -209,6 +209,15 @@ a:hover{
 
 .section--muted{
   background: var(--muted);
+}
+
+/* tighten gap between Stress Tests and Contact */
+#systems{ padding-bottom: 48px; }
+#contact{ padding-top: 48px; }
+
+@media (min-width: 860px){
+  #systems{ padding-bottom: 72px; }
+  #contact{ padding-top: 72px; }
 }
 
 .section__header h2{
