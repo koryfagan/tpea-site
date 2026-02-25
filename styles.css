@@ -204,7 +204,7 @@ a:hover{
 ========================= */
 
 .section{
-  padding: 48px 0;
+  padding: 24px 0;
 }
 
 .section--muted{
@@ -334,7 +334,7 @@ a:hover{
   }
 
   .section{
-    padding: 64px 0;
+    padding: 32px 0;
   }
 
   .grid--2{
