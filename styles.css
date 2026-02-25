@@ -272,7 +272,7 @@ a:hover{
   margin: 6px 0;
 }
 
-/* Trial card — only background + text colour to match accent button */
+/* Trial card — match btn--accent background + white text */
 .card--trial{
   background: var(--accent);
   color: #fff;
