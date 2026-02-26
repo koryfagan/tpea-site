@@ -221,7 +221,10 @@ a:hover{
   letter-spacing: -0.01em;
 }
 
-/* NEW: subordinate headings inside About */
+/* =========================
+   AGREED ADDITION ONLY
+========================= */
+
 .section__header h3{
   margin: 0;
   font-size: 22px;
@@ -259,19 +262,6 @@ a:hover{
   padding: 22px;
 }
 
-.card--trial{
-  background: var(--accent);
-  color: #fff;
-}
-
-.card--trial h3{
-  color: #fff;
-}
-
-.card--trial p{
-  color: rgba(255,255,255,.90);
-}
-
 .card h3{
   margin: 0;
   font-size: 16px;
@@ -291,6 +281,39 @@ a:hover{
 
 .card li{
   margin: 6px 0;
+}
+
+/* Trial card — match btn--accent background + white text */
+.card--trial{
+  background: var(--accent);
+  color: #fff;
+}
+
+.card--trial h3{
+  color: #fff;
+}
+
+.card--trial p,
+.card--trial ul,
+.card--trial li{
+  color: rgba(255,255,255,.86);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.actions{
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.smallprint{
+  margin-top: 14px;
+  font-size: 13px;
+  color: rgba(0,0,0,.60);
 }
 
 /* =========================
@@ -313,6 +336,16 @@ a:hover{
 .footer__links{
   display: flex;
   gap: 18px;
+}
+
+/* =========================
+   SUBTLE (NEW)
+========================= */
+
+.subtle{
+  margin-top: 6px;
+  color: rgba(0,0,0,.55);
+  font-size: 14px;
 }
 
 /* =========================
