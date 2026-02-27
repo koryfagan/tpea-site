@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tpea.co.nz/sitemap.xml
