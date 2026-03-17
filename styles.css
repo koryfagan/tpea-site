@@ -1,396 +1,349 @@
-:root{
-  --ink: #0b1220;
-  --navy: #0b1f3a;
-  --accent: #2aa6b3;
-  --bg: #ffffff;
-  --muted: rgba(0,0,0,.02);
-
-  --max: 1120px;
-  --pad-mobile: 24px;
-  --pad-desktop: 56px;
-
-  --border: rgba(0,0,0,.10);
-  --border-soft: rgba(0,0,0,.06);
-}
-
-*{
-  box-sizing: border-box;
-}
-
-html{
-  -webkit-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
-  font-feature-settings: "kern","liga","clig";
-}
-
-body{
-  margin: 0;
-  background: var(--bg);
-  color: var(--ink);
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-}
-
-a{
-  color: inherit;
-  text-decoration: none;
-}
-
-a:hover{
-  opacity: .9;
-}
-
-.wrap{
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 0 var(--pad-mobile);
-}
-
-/* =========================
-   NAV
-========================= */
-
-.nav{
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(255,255,255,.86);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-soft);
-}
-
-.nav__inner{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 6px 0;
-  gap: 16px;
-}
-
-.brand{
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  white-space: nowrap;
-}
-
-.brand--logo{
-  display: inline-flex;
-  align-items: center;
-}
-
-.brand__img{
-  height: 44px;
-  width: auto;
-  display: block;
-}
-
-.nav__links{
-  display: none;
-  gap: 26px;
-  font-size: 14px;
-  color: rgba(0,0,0,.70);
-}
-
-.nav__links a{
-  padding: 6px 0;
-}
-
-/* =========================
-   BUTTONS
-========================= */
-
-.btn{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 14px;
-  font-weight: 650;
-  font-size: 14px;
-  border: 1px solid transparent;
-  border-radius: 0;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.btn--primary{
-  background: var(--navy);
-  color: #fff;
-}
-
-.btn--accent{
-  background: var(--accent);
-  color: #fff;
-}
-
-.btn--ghost{
-  background: transparent;
-  color: #fff;
-  border-color: rgba(255,255,255,.35);
-}
-
-.btn--outline{
-  background: transparent;
-  color: var(--ink);
-  border-color: var(--border);
-}
-
-/* =========================
-   HERO
-========================= */
-
-.hero{
-  position: relative;
-  min-height: 72vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(rgba(0,0,0,.68), rgba(0,0,0,.68)),
-    url("assets/industrial.png") center/cover no-repeat;
-  transform: scale(1.02);
-}
-
-.hero__inner{
-  position: relative;
-  padding: 56px 0 96px;
-  max-width: 720px;
-}
-
-.kicker{
-  color: rgba(255,255,255,.78);
-  font-size: 12px;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-}
-
-.hero__title{
-  margin: 14px 0 0;
-  color: #fff;
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  line-height: 1.05;
-  font-size: 44px;
-}
-
-.hero__sub{
-  margin: 18px 0 0;
-  color: rgba(255,255,255,.86);
-  font-size: 18px;
-  max-width: 52ch;
-}
-
-.hero__cta{
-  margin-top: 26px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.hero__note{
-  margin-top: 24px;
-  color: rgba(255,255,255,.65);
-  font-size: 13px;
-}
-
-/* =========================
-   SECTIONS
-========================= */
-
-.section{
-  padding: 24px 0;
-}
-
-.section--muted{
-  background: var(--muted);
-}
-
-.section__header{
-  margin-bottom: 24px;
-}
-
-.section__header h2{
-  margin: 0;
-  font-size: 30px;
-  letter-spacing: -0.01em;
-}
-
-/* =========================
-   AGREED ADDITION ONLY
-========================= */
-
-.section__header h3{
-  margin: 0;
-  font-size: 22px;
-  letter-spacing: -0.01em;
-  font-weight: 600;
-}
-
-.section__header p{
-  margin: 12px 0 0;
-  color: rgba(0,0,0,.72);
-  max-width: 74ch;
-}
-
-/* =========================
-   GRID + CARDS
-========================= */
-
-.grid{
-  margin-top: 20px;
-  display: grid;
-  gap: 14px;
-}
-
-.grid--2{
-  grid-template-columns: 1fr;
-}
-
-.grid--3{
-  grid-template-columns: 1fr;
-}
-
-.card{
-  border: 1px solid var(--border);
-  background: #fff;
-  padding: 22px;
-}
-
-.card h3{
-  margin: 0;
-  font-size: 16px;
-  letter-spacing: -0.01em;
-}
-
-.card p{
-  margin: 10px 0 0;
-  color: rgba(0,0,0,.72);
-}
-
-.card ul{
-  margin: 12px 0 0;
-  padding-left: 18px;
-  color: rgba(0,0,0,.72);
-}
-
-.card li{
-  margin: 6px 0;
-}
-
-/* Trial card — match btn--accent background + white text */
-.card--trial{
-  background: var(--accent);
-  color: #fff;
-}
-
-.card--trial h3{
-  color: #fff;
-}
-
-.card--trial p,
-.card--trial ul,
-.card--trial li{
-  color: rgba(255,255,255,.86);
-}
-
-/* =========================
-   CONTACT
-========================= */
-
-.actions{
-  margin-top: 18px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.smallprint{
-  margin-top: 14px;
-  font-size: 13px;
-  color: rgba(0,0,0,.60);
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-.footer{
-  border-top: 1px solid var(--border-soft);
-  padding: 28px 0;
-  color: rgba(0,0,0,.60);
-  font-size: 13px;
-}
-
-.footer__inner{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.footer__links{
-  display: flex;
-  gap: 18px;
-}
-
-/* =========================
-   SUBTLE (NEW)
-========================= */
-
-.subtle{
-  margin-top: 6px;
-  color: rgba(0,0,0,.55);
-  font-size: 14px;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (min-width: 860px){
-
-  .wrap{
-    padding: 0 var(--pad-desktop);
-  }
-
-  .nav__links{
-    display: flex;
-  }
-
-  .hero__title{
-    font-size: 62px;
-  }
-
-  .hero__inner{
-    padding: 64px 0 120px;
-  }
-
-  .section{
-    padding: 32px 0;
-  }
-
-  .grid--2{
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .grid--3{
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .footer__inner{
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
-@media (max-width: 420px){
-  .hero__title{
-    font-size: 38px;
-  }
-}
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="canonical" href="https://tpea.co.nz/">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Private Equity Advantage</title>
+  <meta name="description" content="Structured stress testing for NZ SME directors — revealing how your organisation reads under external scrutiny before scrutiny arrives." />
+
+  <meta property="og:title" content="The Private Equity Advantage" />
+  <meta property="og:description" content="Structured stress testing for NZ SME directors — revealing how your organisation reads under external scrutiny before scrutiny arrives." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://tpea.co.nz/og.png" />
+  <meta property="og:url" content="https://tpea.co.nz/" />
+  <meta property="og:site_name" content="The Private Equity Advantage" />
+
+  <link rel="icon" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="brand brand--logo" href="#top" aria-label="The Private Equity Advantage home">
+        <img src="tpea-logo.png" alt="The Private Equity Advantage" class="brand__img" height="48" />
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#approach">The Interpretation Gap</a>
+        <a href="#about">About</a>
+        <a href="#systems">Stress Tests</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero__inner">
+        <div class="kicker">How serious companies are built and judged</div>
+
+        <h1 class="hero__title">
+          Every company has two versions of itself.<br />
+          The one leadership experiences — and the one<br />
+          the outside world eventually reconstructs.
+        </h1>
+
+        <p class="hero__sub">
+          Regulators, insurers, lenders, investors and courts do not see your organisation from the inside.
+          They reconstruct it from signals distributed across the company.
+          The Stress Tests reveal how that reconstruction reads — before scrutiny arrives.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--accent" href="#systems">Explore the Stress Tests</a>
+        </div>
+
+        <div class="hero__note">
+          Six leadership disciplines. Six Stress Tests. One interpretation framework.
+        </div>
+      </div>
+    </section>
+
+    <!-- THE INTERPRETATION GAP -->
+    <section id="approach" class="section">
+      <div class="wrap">
+        <header class="section__header">
+          <h2>The Interpretation Gap</h2>
+          <p>
+            Between internal experience and external judgement lies a structural phenomenon.
+          </p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Internal Experience</h3>
+            <p>Inside the organisation everything usually feels coherent. Policies exist, training occurs, systems operate, documents accumulate.</p>
+          </article>
+
+          <article class="card">
+            <h3>External Reconstruction</h3>
+            <p>Outsiders reconstruct the organisation from fragments — board minutes, incident records, escalation pathways, risk registers, financial patterns.</p>
+          </article>
+
+          <article class="card">
+            <h3>The Gap</h3>
+            <p>The distance between how leadership experiences the organisation and how the outside world interprets its signals. That gap determines both performance and judgement.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SYSTEM DIAGRAM -->
+    <section class="section">
+      <div class="wrap" style="text-align:center;">
+        <img src="assets/The Interpretation Gap.png" alt="The Private Equity Advantage — system architecture: Internal Company Reality flows through the Interpretation Gap into Six Leadership Disciplines, the Stress Test System, and Director Exposure Intelligence" style="max-width:720px; width:100%;" />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <header class="section__header">
+          <h2>About</h2>
+        </header>
+
+        <p>
+          The Private Equity Advantage introduces a structured diagnostic system designed to examine leadership signals — the patterns that determine how an organisation performs and how it will be judged under scrutiny.
+        </p>
+
+        <p>
+          Serious companies are not judged by the systems they believe they have. They are judged by the story their decisions tell under scrutiny. That story is assembled from signals distributed across the organisation — signals that most leadership teams never examine from the outside in.
+        </p>
+
+        <p>
+          Some leadership teams learn to see these signals earlier than others. Not because they are better at compliance. But because they examine organisations through a different lens. Instead of asking "Do the systems exist?" they ask "How does this organisation actually behave when decisions are made?"
+        </p>
+
+        <p>
+          Each Stress Test reconstructs how the organisation's signals would appear under scrutiny. The objective is not to criticise. The objective is to reveal. Because clarity is the beginning of resilience.
+        </p>
+
+        <header class="section__header" style="margin-top:3rem;">
+          <h3>Founder</h3>
+        </header>
+
+        <p>
+          TPEA was founded by Kory Fagan — a private equity investor and operator with more than 25 years in the New Zealand mid-market, including as a founding partner of NZ Equity Partners. Across that period, one pattern recurred: enterprise risk accumulates quietly long before it is recognised formally, and the signals that determine how an organisation is judged under scrutiny are often the same signals that quietly determined its trajectory long before anything went wrong.
+        </p>
+
+        <p>
+          His work centres on capital allocation, governance architecture, and downside underwriting — the mechanics that determine durability before growth narratives are written.
+        </p>
+
+        <header class="section__header" style="margin-top:3rem;">
+          <h3>What TPEA Is Not</h3>
+        </header>
+
+        <p>
+          TPEA does not provide consulting. It does not run remediation programs. It does not build implementation plans. Each Stress Test is a finite interpretive exercise — it reveals how the organisation reads under scrutiny. No advisory extension. No remediation. No implementation.
+        </p>
+
+        <p>
+          The Stress Tests act like an X-ray for leadership systems. On the surface an organisation can appear healthy. Policies exist. Processes exist. Controls exist. But X-rays reveal structural signals that cannot be seen externally. The Stress Tests perform the same function for leadership systems.
+        </p>
+      </div>
+    </section>
+
+    <!-- STRESS TESTS -->
+    <section id="systems" class="section section--muted">
+      <div class="wrap">
+        <header class="section__header">
+          <h2>The Six Stress Tests</h2>
+          <p>
+            Each Stress Test examines one leadership discipline. Not as a compliance exercise. But as an interpretation exercise.
+          </p>
+          <p style="margin-top:1rem; color: rgba(0,0,0,.72);">
+            The signals that determine performance are often the same signals that determine judgement.
+          </p>
+        </header>
+
+        <div class="grid grid--3">
+
+          <article class="card card--trial">
+            <h3>Health &amp; Safety Stress Test</h3>
+            <p>How your safety governance reads under regulatory scrutiny following a serious workplace event.</p>
+            <p style="margin-top:.75rem; color: rgba(255,255,255,.86);">
+              Most directors only discover how their decisions look after something goes wrong. The Stress Test reveals that story before the incident writes it.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Workforce Leadership Stress Test</h3>
+            <p>How employment structures, culture and obligations are managed — and what workplace issues reveal about deeper leadership signals.</p>
+            <p style="margin-top:.75rem; color: rgba(0,0,0,.72);">
+              The handling of workplace issues often reveals deeper leadership signals.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Asset Stewardship Stress Test</h3>
+            <p>How property, equipment and infrastructure are protected and maintained under scrutiny.</p>
+            <p style="margin-top:.75rem; color: rgba(0,0,0,.72);">
+              Maintenance decisions, investment priorities, and oversight patterns shape how organisations appear under investigation.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Operational Resilience Stress Test</h3>
+            <p>How operational systems respond to disruption, dependency and stress.</p>
+            <p style="margin-top:.75rem; color: rgba(0,0,0,.72);">
+              Supplier concentration, logistics vulnerabilities, and system fragility often remain invisible until disruption occurs.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Financial Discipline Stress Test</h3>
+            <p>How organisations structure liquidity, leverage, and capital allocation under hostile review.</p>
+            <p style="margin-top:.75rem; color: rgba(0,0,0,.72);">
+              Financial stress frequently exposes earlier judgement patterns.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Strategic Judgement Stress Test</h3>
+            <p>Whether major decisions — expansions, acquisitions, partnerships — survive retrospective interpretation.</p>
+            <p style="margin-top:.75rem; color: rgba(0,0,0,.72);">
+              Decisions are rarely judged only by outcomes. They are judged by the quality of judgement exercised at the time.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- THE COURTROOM TEST -->
+    <section class="section">
+      <div class="wrap">
+        <header class="section__header">
+          <h2>The Courtroom Test</h2>
+          <p>
+            Every major corporate event eventually ends up in a room where outsiders
+            reconstruct what leadership did and why.
+          </p>
+        </header>
+
+        <div class="grid grid--2">
+          <article class="card">
+            <ul>
+              <li>Regulatory investigation after an incident</li>
+              <li>Insurer review following a material claim</li>
+              <li>Court proceedings examining director conduct</li>
+              <li>Investor scrutiny during transaction diligence</li>
+              <li>Bank credit reassessment under stress</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p>
+              At that moment the company is no longer judged by how the organisation felt internally.
+              It is judged by how its decisions appear when someone else tells the story.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORGANISATIONAL DRIFT -->
+    <section class="section section--muted">
+      <div class="wrap">
+        <header class="section__header">
+          <h2>Organisational Drift</h2>
+          <p>
+            Operational companies rarely encounter serious problems because of a single mistake.
+          </p>
+        </header>
+
+        <div class="grid grid--2">
+          <article class="card">
+            <ul>
+              <li>Signals weaken gradually</li>
+              <li>Escalation slows over time</li>
+              <li>Dependencies accumulate unnoticed</li>
+              <li>Decisions become normalised</li>
+              <li>Individually harmless — but compounding</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p>
+              When serious problems develop, the story almost always traces back to one of six leadership disciplines.
+              Not because the leaders were reckless. But because organisations drift.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCOPE -->
+    <section class="section">
+      <div class="wrap">
+        <header class="section__header">
+          <h2>Scope and Boundary</h2>
+          <p>
+            Each Stress Test is a finite interpretive exercise examining one leadership discipline.
+          </p>
+        </header>
+
+        <div class="grid grid--2">
+          <article class="card">
+            <ul>
+              <li>One leadership discipline per Stress Test</li>
+              <li>Documentation assessed as it exists</li>
+              <li>Director-level exposure report issued</li>
+              <li>No remediation</li>
+              <li>No implementation</li>
+              <li>No advisory extension</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p>
+              The objective is not to improve the system.
+              The objective is to reveal how the organisation's signals would likely be interpreted
+              when outsiders reconstruct the company following a serious event.
+            </p>
+            <p style="margin-top:1rem;">
+              Once leadership sees that story, the Interpretation Gap becomes visible.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  
+<!-- CONTACT -->
+<section class="section">
+  <div class="wrap">
+    <header class="section__header">
+      <h2>Contact</h2>
+    </header>
+
+    <p>
+      The Private Equity Advantage<br />
+      Auckland, New Zealand
+    </p>
+
+    <p>
+      enquiries@tpea.co.nz
+    </p>
+  </div>
+</section>
+  
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>© <span id="year"></span> The Private Equity Advantage</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
