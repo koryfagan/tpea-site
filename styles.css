@@ -152,7 +152,7 @@ a:hover{
   inset:0;
   background:
     linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.62)),
-    url("assets/hero-cravasse.png") center/cover no-repeat;
+    url("assets/hero-crevasse.png") center/cover no-repeat;
   transform: scale(1.02);
 }
 
