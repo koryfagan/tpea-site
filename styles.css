@@ -152,13 +152,13 @@ a:hover{
   inset:0;
   background:
     linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.62)),
-    url("assets/hero-crevasse.png") center/cover no-repeat;
+    url("assets/hero-cravasse.png") center/cover no-repeat;
   transform: scale(1.02);
 }
 
 .hero__inner{
   position: relative;
-  padding: 24px 0 96px;
+  padding: 16px 0 24px;
   max-width: 720px;
 }
 
@@ -235,7 +235,6 @@ a:hover{
 .section__header p{
   margin: 12px 0 0;
   color: rgba(0,0,0,.72);
-  max-width: 74ch;
 }
 
 /* =========================
@@ -367,7 +366,7 @@ a:hover{
   }
 
   .hero__inner{
-    padding: 32px 0 120px;
+    padding: 20px 0 28px;
   }
 
   .section{
