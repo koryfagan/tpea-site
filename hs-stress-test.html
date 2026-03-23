@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Health &amp; Safety Stress Test — The Private Equity Advantage</title>
+  <meta name="description" content="How your documented safety governance would read under regulatory scrutiny after a serious workplace event. Pre-incident interpretive review for NZ owner-directors." />
+
+  <meta property="og:title" content="Health &amp; Safety Stress Test — TPEA" />
+  <meta property="og:description" content="A pre-incident interpretive review. How your H&amp;S governance reads when someone else tells the story." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tpea.co.nz/hs-stress-test" />
+  <meta property="og:site_name" content="The Private Equity Advantage" />
+
+  <link rel="icon" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* ── H&S page extensions (no styles.css overrides) ── */
+
+    .prose{max-width:620px;line-height:1.72}
+    .prose p{margin:0 0 14px;color:rgba(0,0,0,.72)}
+    .prose p:last-child{margin-bottom:0}
+    .prose strong{color:var(--ink);font-weight:600}
+
+    .dark-section{background:var(--navy);color:#fff;padding:32px 0}
+    .dark-section .section__header h2{color:#fff}
+    .dark-section .prose p{color:rgba(255,255,255,.78)}
+
+    .examine-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px}
+    .examine-item{border:1px solid var(--border);background:#fff;padding:22px}
+    .examine-item h3{margin:0;font-size:16px;letter-spacing:-0.01em}
+    .examine-item p{margin:10px 0 0;color:rgba(0,0,0,.72);font-size:15px}
+
+    .output-list{max-width:620px;list-style:none;padding:0;margin:20px 0 0}
+    .output-list li{padding:12px 0 12px 22px;border-bottom:1px solid var(--border-soft);color:rgba(0,0,0,.72);position:relative;font-size:15px}
+    .output-list li::before{content:"—";position:absolute;left:0;color:var(--accent);font-weight:600}
+    .output-list li:last-child{border-bottom:none}
+
+    .sector-tags{margin-top:18px;font-size:13px;color:rgba(0,0,0,.50);letter-spacing:.01em}
+
+    .steps-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px;counter-reset:step}
+    .step-card{border:1px solid var(--border);background:#fff;padding:22px;counter-increment:step}
+    .step-card h3{margin:0;font-size:16px;letter-spacing:-0.01em}
+    .step-card h3::before{content:counter(step) ". ";color:var(--accent);font-weight:700}
+    .step-card p{margin:10px 0 0;color:rgba(0,0,0,.72);font-size:15px}
+
+    .boundary-card{border:1px solid var(--border);background:#fff;padding:22px;max-width:620px}
+    .boundary-card h3{margin:0 0 12px;font-size:16px;letter-spacing:-0.01em}
+    .boundary-card .boundary-lines{color:rgba(0,0,0,.64);line-height:2.1;font-size:15px}
+
+    .cta-section{padding:32px 0}
+    .cta-section h2{margin:0;font-size:30px;letter-spacing:-0.01em}
+    .cta-section .cta-sub{margin:12px 0 0;color:rgba(0,0,0,.72);max-width:480px;font-size:15px}
+    .cta-section .actions{margin-top:20px}
+    .cta-section .cta-email{margin-top:12px;font-size:14px;color:rgba(0,0,0,.50)}
+    .cta-section .cta-email a{color:var(--accent)}
+
+    @media(min-width:860px){
+      .examine-grid{grid-template-columns:repeat(3,1fr)}
+      .steps-grid{grid-template-columns:repeat(3,1fr)}
+      .dark-section{padding:48px 0}
+      .cta-section{padding:48px 0}
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="brand brand--logo" href="https://tpea.co.nz" aria-label="The Private Equity Advantage">
+        <img src="tpea-logo.png" alt="The Private Equity Advantage" class="brand__img" height="44" />
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="https://tpea.co.nz/#approach">The Interpretation Gap</a>
+        <a href="https://tpea.co.nz/#about">About</a>
+        <a href="https://tpea.co.nz/#systems">Stress Tests</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero">
+      <div class="wrap hero__inner">
+        <div class="kicker">Health &amp; Safety Stress Test</div>
+
+        <h1 class="hero__title">
+          What story does your safety record tell when someone else reads it?
+        </h1>
+
+        <p class="hero__sub">
+          A pre-incident interpretive review of how your documented H&amp;S governance
+          would read under regulatory scrutiny. Not a compliance audit. Not advisory.
+          The work stops at report delivery.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--accent" href="#contact">Begin a Conversation</a>
+          <a class="btn btn--ghost" href="https://tpea.co.nz/#systems">All Stress Tests</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ THE GAP ═══ -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section__header">
+          <h2>The Interpretation Gap</h2>
+        </div>
+        <div class="prose">
+          <p>
+            Inside the organisation, safety governance feels coherent. Policies exist.
+            Training runs. Hazards are managed. Leadership is engaged.
+          </p>
+          <p>
+            After an incident, none of that matters in the way you expect.
+            Investigators reconstruct your decisions from documents, meeting minutes,
+            and the absence of documents. They do not assess intentions. They read signals.
+          </p>
+          <p>
+            The distance between how you experience your governance and how a regulator
+            reconstructs it is where personal liability lives. Most directors discover
+            that distance only after something forces the question.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ WHAT IT EXAMINES ═══ -->
+    <section class="section section--muted">
+      <div class="wrap">
+        <div class="section__header">
+          <h2>What the Stress Test Examines</h2>
+          <p>Six structural areas. Each one shapes how your H&amp;S governance reads under scrutiny.</p>
+        </div>
+
+        <div class="examine-grid">
+          <div class="examine-item">
+            <h3>Policy Architecture</h3>
+            <p>Whether your documented policies reflect operational reality — or exist independently of it.</p>
+          </div>
+          <div class="examine-item">
+            <h3>Risk Registers</h3>
+            <p>Whether identified risks are actively governed or the register has become a static artefact.</p>
+          </div>
+          <div class="examine-item">
+            <h3>Incident Records</h3>
+            <p>What the pattern of recorded incidents reveals about oversight — and what the absences reveal.</p>
+          </div>
+          <div class="examine-item">
+            <h3>Training &amp; Competency</h3>
+            <p>Whether records demonstrate genuine capability or procedural compliance.</p>
+          </div>
+          <div class="examine-item">
+            <h3>Governance Minutes</h3>
+            <p>Whether H&amp;S appears in board records as active oversight — or only after something goes wrong.</p>
+          </div>
+          <div class="examine-item">
+            <h3>Officer Duty Alignment</h3>
+            <p>Whether the governance trail supports a credible due diligence defence under HSWA Section&nbsp;44.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ WHAT YOU RECEIVE ═══ -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section__header">
+          <h2>What You Receive</h2>
+          <p>A structured exposure report. One document. Fixed scope.</p>
+        </div>
+
+        <ul class="output-list">
+          <li>Evidence that stands on its own — documented, verifiable, defensible</li>
+          <li>Gaps that would require verbal explanation under investigation</li>
+          <li>Ambiguity in the governance trail that an investigator would interpret, not ignore</li>
+          <li>The likely consolidation path for accountability after a serious event</li>
+          <li>The specific points where internal experience and external interpretation diverge</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ═══ WHO IT'S FOR ═══ -->
+    <section class="section section--muted">
+      <div class="wrap">
+        <div class="section__header">
+          <h2>Who This Is For</h2>
+        </div>
+        <div class="prose">
+          <p>
+            Directors and officers in operational businesses who have never seen their
+            safety governance through an investigator's lens. Leaders whose systems
+            feel adequate — but who have never tested what adequate looks like
+            when someone else tells the story.
+          </p>
+          <p>
+            Under HSWA, officer duties are personal. They do not transfer to a safety
+            manager. They do not disappear into a policy manual. If something goes wrong,
+            the question is what <strong>you</strong> did — and what the documents prove you did.
+          </p>
+        </div>
+        <div class="sector-tags">
+          Construction · Manufacturing · Transport &amp; Logistics
+          · Agriculture · Infrastructure Services · Industrial Services
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ WHY NOW ═══ -->
+    <section class="dark-section">
+      <div class="wrap">
+        <div class="section__header">
+          <h2>Why Now</h2>
+        </div>
+        <div class="prose">
+          <p>
+            The Gibson decision confirmed that directors face personal prosecution —
+            not just the company. The HSWA Amendment Bill introduced in February 2026
+            signals further tightening. The regulatory direction is not ambiguous.
+          </p>
+          <p>
+            The question is not whether scrutiny will arrive. The question is whether
+            the governance trail will hold when it does.
+          </p>
+          <p>
+            Most directors will not test that until an incident forces it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PROCESS ═══ -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section__header">
+          <h2>How It Works</h2>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <h3>Conversation</h3>
+            <p>A brief discussion to confirm the Stress Test fits your situation.</p>
+          </div>
+          <div class="step-card">
+            <h3>Engagement</h3>
+            <p>Scope and terms confirmed. Engagement letter issued before any work begins.</p>
+          </div>
+          <div class="step-card">
+            <h3>Documents</h3>
+            <p>You provide existing H&amp;S documentation. No additional narrative required.</p>
+          </div>
+          <div class="step-card">
+            <h3>Analysis</h3>
+            <p>Your system assessed through an interpretive lens. How it reads, not how it feels.</p>
+          </div>
+          <div class="step-card">
+            <h3>Report</h3>
+            <p>Structured exposure report delivered. The engagement ends here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ BOUNDARY ═══ -->
+    <section class="section section--muted">
+      <div class="wrap">
+        <div class="boundary-card">
+          <h3>Scope and Boundary</h3>
+          <div class="boundary-lines">
+            Interpretive review only — not advisory, not compliance consulting<br />
+            Documentation assessed as it exists today<br />
+            No remediation advice. No implementation. No ongoing engagement.<br />
+            The work stops at report delivery.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CTA ═══ -->
+    <section id="contact" class="cta-section">
+      <div class="wrap">
+        <h2>Begin a Conversation</h2>
+        <p class="cta-sub">
+          The first step is a brief conversation to confirm the Stress Test
+          is appropriate for your situation.
+        </p>
+        <div class="actions">
+          <a class="btn btn--primary" href="mailto:kory@tpea.co.nz?subject=H%26S%20Stress%20Test%20Enquiry">Email Kory Fagan</a>
+        </div>
+        <p class="cta-email"><a href="mailto:kory@tpea.co.nz">kory@tpea.co.nz</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>&copy; The Private Equity Advantage &middot; Auckland, New Zealand</span>
+      <div class="footer__links">
+        <a href="https://tpea.co.nz">&larr; tpea.co.nz</a>
+        <a href="https://digitalcapitalgroup.co.nz">A DCG company</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
