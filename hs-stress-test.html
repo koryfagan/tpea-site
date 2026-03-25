@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -16,63 +15,61 @@
   <style>
     /* ── H&S page extensions (no styles.css overrides) ── */
 
-.prose{max-width:620px;line-height:1.72}
-.prose p{margin:0 0 14px;color:rgba(0,0,0,.72)}
-.prose p:last-child{margin-bottom:0}
-.prose strong{color:var(--ink);font-weight:600}
+    .prose{max-width:620px;line-height:1.72}
+    .prose p{margin:0 0 14px;color:rgba(0,0,0,.72)}
+    .prose p:last-child{margin-bottom:0}
+    .prose strong{color:var(--ink);font-weight:600}
 
-.dark-section{background:var(--navy);color:#fff;padding:32px 0}
-.dark-section .section__header h2{color:#fff}
-.dark-section .prose p{color:rgba(255,255,255,.78)}
-.dark-section .prose strong{color:#fff}
+    .dark-section{background:var(--navy);color:#fff;padding:32px 0}
+    .dark-section .section__header h2{color:#fff}
+    .dark-section .prose p{color:rgba(255,255,255,.78)}
+    .dark-section .prose strong{color:#fff}
 
-.examine-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px}
-.examine-item{border:1px solid var(--border);background:#fff;padding:22px}
-.examine-item h3{margin:0;font-size:16px;letter-spacing:-0.01em}
-.examine-item p{margin:10px 0 0;color:rgba(0,0,0,.72);font-size:15px}
+    .examine-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px}
+    .examine-item{border:1px solid var(--border);background:#fff;padding:22px}
+    .examine-item h3{margin:0;font-size:16px;letter-spacing:-0.01em}
+    .examine-item p{margin:10px 0 0;color:rgba(0,0,0,.72);font-size:15px}
 
-.output-list{max-width:620px;list-style:none;padding:0;margin:20px 0 0}
-.output-list li{padding:12px 0 12px 22px;border-bottom:1px solid var(--border-soft);color:rgba(0,0,0,.72);position:relative;font-size:15px}
-.output-list li::before{content:"—";position:absolute;left:0;color:var(--accent);font-weight:600}
-.output-list li:last-child{border-bottom:none}
+    .output-list{max-width:620px;list-style:none;padding:0;margin:20px 0 0}
+    .output-list li{padding:12px 0 12px 22px;border-bottom:1px solid var(--border-soft);color:rgba(0,0,0,.72);position:relative;font-size:15px}
+    .output-list li::before{content:"—";position:absolute;left:0;color:var(--accent);font-weight:600}
+    .output-list li:last-child{border-bottom:none}
 
-.sector-tags{margin-top:18px;font-size:13px;color:rgba(0,0,0,.50);letter-spacing:.01em}
+    .sector-tags{margin-top:18px;font-size:13px;color:rgba(0,0,0,.50);letter-spacing:.01em}
 
-.steps-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px;counter-reset:step}
-.step-card{border:1px solid var(--border);background:#fff;padding:22px;counter-increment:step}
-.step-card h3{margin:0;font-size:16px;letter-spacing:-0.01em}
-.step-card h3::before{content:counter(step) ". ";color:var(--accent);font-weight:700}
-.step-card p{margin:10px 0 0;color:rgba(0,0,0,.72);font-size:15px}
+    .steps-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px;counter-reset:step}
+    .step-card{border:1px solid var(--border);background:#fff;padding:22px;counter-increment:step}
+    .step-card h3{margin:0;font-size:16px;letter-spacing:-0.01em}
+    .step-card h3::before{content:counter(step) ". ";color:var(--accent);font-weight:700}
+    .step-card p{margin:10px 0 0;color:rgba(0,0,0,.72);font-size:15px}
 
-.boundary-card{border:1px solid var(--border);background:#fff;padding:22px;max-width:620px}
-.boundary-card h3{margin:0 0 12px;font-size:16px;letter-spacing:-0.01em}
-.boundary-card .boundary-lines{color:rgba(0,0,0,.64);line-height:2.1;font-size:15px}
+    .boundary-card{border:1px solid var(--border);background:#fff;padding:22px;max-width:620px}
+    .boundary-card h3{margin:0 0 12px;font-size:16px;letter-spacing:-0.01em}
+    .boundary-card .boundary-lines{color:rgba(0,0,0,.64);line-height:2.1;font-size:15px}
 
-.pullquote{max-width:620px;border-left:3px solid var(--accent);padding:0 0 0 20px;margin:24px 0;font-size:17px;line-height:1.6;color:var(--ink);font-weight:500;letter-spacing:-0.01em}
-.dark-section .pullquote{color:#fff;border-left-color:rgba(255,255,255,.4)}
+    .pullquote{max-width:620px;border-left:3px solid var(--accent);padding:0 0 0 20px;margin:24px 0;font-size:17px;line-height:1.6;color:var(--ink);font-weight:500;letter-spacing:-0.01em}
+    .dark-section .pullquote{color:#fff;border-left-color:rgba(255,255,255,.4)}
 
-.cta-section{padding:32px 0}
-.cta-section h2{margin:0;font-size:30px;letter-spacing:-0.01em}
-.cta-section .cta-sub{margin:12px 0 0;color:rgba(0,0,0,.72);max-width:480px;font-size:15px}
-.cta-section .actions{margin-top:20px}
-.cta-section .cta-email{margin-top:12px;font-size:14px;color:rgba(0,0,0,.50)}
-.cta-section .cta-email a{color:var(--accent)}
+    .cta-section{padding:32px 0}
+    .cta-section h2{margin:0;font-size:30px;letter-spacing:-0.01em}
+    .cta-section .cta-sub{margin:12px 0 0;color:rgba(0,0,0,.72);max-width:480px;font-size:15px}
+    .cta-section .actions{margin-top:20px}
+    .cta-section .cta-email{margin-top:12px;font-size:14px;color:rgba(0,0,0,.50)}
+    .cta-section .cta-email a{color:var(--accent)}
 
-.authority-line{margin-top:20px;font-size:14px;color:rgba(0,0,0,.50);max-width:480px}
+    .authority-line{margin-top:20px;font-size:14px;color:rgba(0,0,0,.50);max-width:480px}
 
-@media(min-width:860px){
-  .examine-grid{grid-template-columns:repeat(3,1fr)}
-  .steps-grid{grid-template-columns:repeat(3,1fr)}
-  .dark-section{padding:48px 0}
-  .cta-section{padding:48px 0}
-}
-
+    @media(min-width:860px){
+      .examine-grid{grid-template-columns:repeat(3,1fr)}
+      .steps-grid{grid-template-columns:repeat(3,1fr)}
+      .dark-section{padding:48px 0}
+      .cta-section{padding:48px 0}
+    }
   </style>
 </head>
 <body>
 
 <!-- NAV -->
-
 <header class="nav">
   <div class="wrap nav__inner">
     <a class="brand brand--logo" href="https://tpea.co.nz" aria-label="The Private Equity Advantage">
@@ -89,31 +86,28 @@
 <main>
 
 <!-- ═══ HERO ═══ -->
-
 <section class="hero">
   <div class="wrap hero__inner">
     <div class="kicker">Health &amp; Safety Stress Test</div>
 
-<h1 class="hero__title">
-  If something goes wrong tomorrow, how will investigators interpret what you did?
-</h1>
+    <h1 class="hero__title">
+      If something goes wrong tomorrow, how will investigators interpret what you did?
+    </h1>
 
-<p class="hero__sub">
-  A pre-incident interpretive review that reconstructs how your safety governance
-  would read under regulatory scrutiny after a serious workplace event.
-  The work stops at report delivery.
-</p>
+    <p class="hero__sub">
+      A structured review that reveals how your safety governance reads
+      when someone else tells the story. Not advisory. Not remediation.
+      The work stops at report delivery.
+    </p>
 
-<div class="hero__cta">
-  <a class="btn btn--accent" href="#contact">Begin a Conversation</a>
-  <a class="btn btn--ghost" href="https://tpea.co.nz/#systems">All Stress Tests</a>
-</div>
-
+    <div class="hero__cta">
+      <a class="btn btn--accent" href="#contact">Begin a Conversation</a>
+      <a class="btn btn--ghost" href="https://tpea.co.nz/#systems">All Stress Tests</a>
+    </div>
   </div>
 </section>
 
 <!-- ═══ THE PROBLEM ═══ -->
-
 <section class="section">
   <div class="wrap">
     <div class="section__header">
@@ -121,19 +115,21 @@
     </div>
     <div class="prose">
       <p>
-        Inside your organisation, safety governance feels coherent. Policies exist.
-        Training runs. Hazards are managed.
+        Every major corporate event eventually ends up in a room where outsiders
+        reconstruct what leadership did and why.
+        Regulators. Insurers. Investigators. Courts.
       </p>
       <p>
-        After a serious incident, investigators do not verify that systems existed.
-        They reconstruct whether directors exercised due diligence.
-        They gather fragments across the organisation &mdash; board minutes, incident records,
-        escalation pathways, risk registers &mdash; and assemble them into a narrative
-        about leadership behaviour.
+        At that moment the company is no longer judged by how the organisation
+        felt internally. It is judged by how its decisions appear
+        <strong>when someone else tells the story</strong>.
       </p>
       <p>
-        That narrative determines how you are judged.
-        Not your intentions. Not your effort. The <strong>signals your decisions left behind</strong>.
+        Investigators gather fragments across the organisation &mdash; board minutes,
+        incident records, escalation pathways, risk registers &mdash; and assemble them
+        into a narrative about leadership behaviour.
+        Decisions that seemed reasonable at the time may appear negligent later.
+        The difference between the two often determines how directors are judged.
       </p>
       <p>
         Most directors only encounter that narrative after the event that triggered it.
@@ -145,7 +141,6 @@
 </section>
 
 <!-- ═══ THE SHIFT ═══ -->
-
 <section class="dark-section">
   <div class="wrap">
     <div class="section__header">
@@ -153,28 +148,36 @@
     </div>
     <div class="prose">
       <p>
-        There is a distance between how you experience your governance
-        and how a regulator reconstructs it. That distance is where personal liability lives.
+        Between how you experience your governance and how a regulator reconstructs it
+        lies a structural gap. That gap is where personal liability lives.
       </p>
       <p>
         Investigators do not assess intentions. They read signals.
         They do not ask whether your systems felt adequate.
         They ask what the documents prove you did &mdash; and what the absences prove you didn't.
       </p>
-      <p class="pullquote">
-        The moment a director registers that investigators will read their decisions
-        differently than they do, the question changes from "are my systems adequate?"
-        to "how do my decisions actually look?"
+      <p>
+        <strong>Serious companies are not judged by the systems they believe they have.
+        They are judged by the story their decisions tell under scrutiny.</strong>
       </p>
       <p>
-        The Stress Test allows you to see that reconstruction before an incident writes it.
+        The Stress Test acts like an X-ray for leadership systems.
+        On the surface an organisation can appear healthy.
+        Policies exist. Processes exist. Controls exist.
+        But X-rays reveal structural signals that cannot be seen externally.
+        The Stress Test performs the same function for safety governance &mdash;
+        it reveals how the organisation will be judged when scrutiny arrives.
+      </p>
+      <p class="pullquote">
+        The moment a director registers that investigators will read their decisions
+        differently than they do, the Interpretation Gap appears.
+        And once you see that gap, you can't unsee it.
       </p>
     </div>
   </div>
 </section>
 
 <!-- ═══ WHAT IT EXAMINES ═══ -->
-
 <section class="section section--muted">
   <div class="wrap">
     <div class="section__header">
@@ -182,38 +185,36 @@
       <p>Six structural areas. Each shapes how your governance reads under scrutiny.</p>
     </div>
 
-<div class="examine-grid">
-  <div class="examine-item">
-    <h3>Policy Architecture</h3>
-    <p>Whether your documented policies reflect operational reality &mdash; or exist independently of it.</p>
-  </div>
-  <div class="examine-item">
-    <h3>Risk Registers</h3>
-    <p>Whether identified risks are actively governed or the register has become a static artefact.</p>
-  </div>
-  <div class="examine-item">
-    <h3>Incident Records</h3>
-    <p>What the pattern of recorded incidents reveals about oversight &mdash; and what the absences reveal.</p>
-  </div>
-  <div class="examine-item">
-    <h3>Training &amp; Competency</h3>
-    <p>Whether records demonstrate genuine capability or procedural compliance.</p>
-  </div>
-  <div class="examine-item">
-    <h3>Governance Minutes</h3>
-    <p>Whether H&amp;S appears in board records as active oversight &mdash; or only after something goes wrong.</p>
-  </div>
-  <div class="examine-item">
-    <h3>Officer Duty Alignment</h3>
-    <p>Whether the governance trail supports a credible due diligence defence under HSWA Section&nbsp;44.</p>
-  </div>
-</div>
-
+    <div class="examine-grid">
+      <div class="examine-item">
+        <h3>Policy Architecture</h3>
+        <p>Whether your documented policies reflect operational reality &mdash; or exist independently of it.</p>
+      </div>
+      <div class="examine-item">
+        <h3>Risk Registers</h3>
+        <p>Whether identified risks are actively governed or the register has become a static artefact.</p>
+      </div>
+      <div class="examine-item">
+        <h3>Incident Records</h3>
+        <p>What the pattern of recorded incidents reveals about oversight &mdash; and what the absences reveal.</p>
+      </div>
+      <div class="examine-item">
+        <h3>Training &amp; Competency</h3>
+        <p>Whether records demonstrate genuine capability or procedural compliance.</p>
+      </div>
+      <div class="examine-item">
+        <h3>Governance Minutes</h3>
+        <p>Whether H&amp;S appears in board records as active oversight &mdash; or only after something goes wrong.</p>
+      </div>
+      <div class="examine-item">
+        <h3>Officer Duty Alignment</h3>
+        <p>Whether the governance trail supports a credible due diligence defence under HSWA Section&nbsp;44.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ═══ WHAT YOU RECEIVE ═══ -->
-
 <section class="section">
   <div class="wrap">
     <div class="section__header">
@@ -221,19 +222,17 @@
       <p>A structured Exposure Report. One document. Fixed scope.</p>
     </div>
 
-<ul class="output-list">
-  <li>How your governance trail reads when assembled by someone looking for accountability</li>
-  <li>Where evidence stands on its own &mdash; and where it would require verbal explanation under investigation</li>
-  <li>The specific points where internal experience and external interpretation diverge</li>
-  <li>Ambiguity in the governance record that an investigator would interpret, not ignore</li>
-  <li>An Exposure Index score reflecting how your safety governance would likely be interpreted under scrutiny</li>
-</ul>
-
+    <ul class="output-list">
+      <li>How your governance trail reads when assembled by someone looking for accountability &mdash; not someone looking to help</li>
+      <li>Where evidence stands on its own &mdash; and where it would require verbal explanation you may never get to give</li>
+      <li>The specific points where what you believe about your governance and what an investigator would conclude begin to diverge</li>
+      <li>Ambiguity in the governance record that an investigator would interpret, not ignore</li>
+      <li>An Exposure Index score &mdash; a single measure of how your safety governance would likely be read under scrutiny</li>
+    </ul>
   </div>
 </section>
 
 <!-- ═══ WHO IT'S FOR ═══ -->
-
 <section class="section section--muted">
   <div class="wrap">
     <div class="section__header">
@@ -247,6 +246,11 @@
         their decisions.
       </p>
       <p>
+        The most disciplined organisations deliberately examine themselves
+        the way outsiders eventually will. They close the Interpretation Gap
+        before an event forces the question.
+      </p>
+      <p>
         Under HSWA Section 44, officers must exercise due diligence to ensure their
         organisation meets its health and safety obligations. That duty is personal.
         It is non-delegable. It carries criminal exposure. It cannot be discharged
@@ -258,19 +262,24 @@
       </p>
     </div>
     <div class="sector-tags">
-      
+      Construction · Manufacturing · Transport &amp; Logistics
+      · Agriculture · Infrastructure Services · Industrial Services
     </div>
   </div>
 </section>
 
 <!-- ═══ WHY NOW ═══ -->
-
 <section class="dark-section">
   <div class="wrap">
     <div class="section__header">
       <h2>Why Now</h2>
     </div>
     <div class="prose">
+      <p>
+        Operational companies rarely encounter serious problems because of a single mistake.
+        Organisations drift. Signals weaken. Escalation slows. Decisions become normalised.
+        Individually these signals appear harmless. Over time they compound.
+      </p>
       <p>
         The Gibson decision confirmed that directors face personal criminal prosecution
         for safety governance failures &mdash; not just the company.
@@ -291,41 +300,38 @@
 </section>
 
 <!-- ═══ PROCESS ═══ -->
-
 <section class="section">
   <div class="wrap">
     <div class="section__header">
       <h2>How It Works</h2>
     </div>
 
-<div class="steps-grid">
-  <div class="step-card">
-    <h3>Conversation</h3>
-    <p>A brief discussion to confirm the Stress Test is appropriate for your situation. No obligation.</p>
-  </div>
-  <div class="step-card">
-    <h3>Engagement</h3>
-    <p>Scope and terms confirmed. Engagement letter issued. 50% deposit to commence.</p>
-  </div>
-  <div class="step-card">
-    <h3>Documents</h3>
-    <p>You provide existing H&amp;S documentation &mdash; policies, risk registers, incident records, training logs, governance minutes. No additional narrative required.</p>
-  </div>
-  <div class="step-card">
-    <h3>Analysis</h3>
-    <p>Your governance examined through the same interpretive lens investigators apply after serious incidents. How it reads, not how it feels.</p>
-  </div>
-  <div class="step-card">
-    <h3>Exposure Report</h3>
-    <p>Structured report delivered including your Exposure Index score. The engagement ends here.</p>
-  </div>
-</div>
-
+    <div class="steps-grid">
+      <div class="step-card">
+        <h3>Conversation</h3>
+        <p>A brief discussion to confirm the Stress Test is appropriate for your situation. No obligation.</p>
+      </div>
+      <div class="step-card">
+        <h3>Engagement</h3>
+        <p>Scope and terms confirmed. Engagement letter issued. 50% deposit to commence.</p>
+      </div>
+      <div class="step-card">
+        <h3>Documents</h3>
+        <p>You provide existing H&amp;S documentation &mdash; policies, risk registers, incident records, training logs, governance minutes. No additional narrative required.</p>
+      </div>
+      <div class="step-card">
+        <h3>Analysis</h3>
+        <p>Your governance examined through the same interpretive lens investigators apply after serious incidents. How it reads, not how it feels.</p>
+      </div>
+      <div class="step-card">
+        <h3>Exposure Report</h3>
+        <p>Structured report delivered including your Exposure Index score. The engagement ends here.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ═══ BOUNDARY ═══ -->
-
 <section class="section section--muted">
   <div class="wrap">
     <div class="boundary-card">
@@ -341,13 +347,12 @@
 </section>
 
 <!-- ═══ CTA ═══ -->
-
 <section id="contact" class="cta-section">
   <div class="wrap">
     <h2>Begin a Conversation</h2>
     <p class="cta-sub">
-      The first step is a brief conversation to confirm the Stress Test
-      is appropriate for your situation. No obligation. No sales process.
+      Most companies only discover the Interpretation Gap after an event forces the question.
+      This conversation happens before.
     </p>
     <div class="actions">
       <a class="btn btn--primary" href="mailto:kory@tpea.co.nz?subject=H%26S%20Stress%20Test%20Enquiry">Email Kory Fagan</a>
@@ -363,7 +368,6 @@
 </main>
 
 <!-- FOOTER -->
-
 <footer class="footer">
   <div class="wrap footer__inner">
     <span>&copy; The Private Equity Advantage &middot; Auckland, New Zealand</span>
