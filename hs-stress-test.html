@@ -16,6 +16,7 @@
   <style>
     /* ── H&S page extensions (no styles.css overrides) ── */
 
+```
 .prose{max-width:620px;line-height:1.72}
 .prose p{margin:0 0 14px;color:rgba(0,0,0,.72)}
 .prose p:last-child{margin-bottom:0}
@@ -27,14 +28,11 @@
 .dark-section .prose strong{color:#fff}
 
 .examine-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:16px}
-.examine-item{border:1px solid var(--border);background:#fff;padding:16px 18px}
-.examine-item h3{margin:0;font-size:15px;letter-spacing:-0.01em}
-.examine-item p{margin:6px 0 0;color:rgba(0,0,0,.64);font-size:14px}
+.examine-item{border:1px solid var(--border);background:#fff;padding:14px 16px}
+.examine-item h3{margin:0;font-size:14px;letter-spacing:-0.01em;font-weight:600}
+.examine-item p{margin:4px 0 0;color:rgba(0,0,0,.58);font-size:13px}
 
-.output-list{max-width:620px;list-style:none;padding:0;margin:14px 0 0}
-.output-list li{padding:9px 0 9px 20px;border-bottom:1px solid var(--border-soft);color:rgba(0,0,0,.72);position:relative;font-size:14px;line-height:1.6}
-.output-list li::before{content:"—";position:absolute;left:0;color:var(--accent);font-weight:600}
-.output-list li:last-child{border-bottom:none}
+.output-summary{max-width:620px;margin:20px 0 0;font-size:15px;color:rgba(0,0,0,.72);line-height:1.72}
 
 .sector-tags{margin-top:14px;font-size:13px;color:rgba(0,0,0,.50);letter-spacing:.01em}
 
@@ -44,9 +42,7 @@
 .step-card h3::before{content:counter(step) ". ";color:var(--ink);font-weight:700}
 .step-card p{margin:6px 0 0;color:rgba(0,0,0,.64);font-size:14px}
 
-.boundary-card{border:1px solid var(--border);background:#fff;padding:18px;max-width:620px}
-.boundary-card h3{margin:0 0 10px;font-size:15px;letter-spacing:-0.01em}
-.boundary-card .boundary-lines{color:rgba(0,0,0,.64);line-height:1.9;font-size:14px}
+.boundary-line{max-width:620px;font-size:14px;color:rgba(0,0,0,.58);line-height:1.8;margin-top:8px}
 
 .pullquote{max-width:620px;border-left:3px solid var(--accent);padding:0 0 0 20px;margin:24px 0;font-size:17px;line-height:1.6;color:var(--ink);font-weight:500;letter-spacing:-0.01em}
 .dark-section .pullquote{color:#fff;border-left-color:rgba(255,255,255,.4)}
@@ -57,8 +53,6 @@
 .cta-section .actions{margin-top:20px}
 .cta-section .cta-email{margin-top:12px;font-size:14px;color:rgba(0,0,0,.50)}
 .cta-section .cta-email a{color:var(--accent)}
-
-.authority-line{margin-top:20px;font-size:14px;color:rgba(0,0,0,.50);max-width:480px}
 
 /* ── Evidence section ── */
 .evidence-stats{display:grid;grid-template-columns:1fr;gap:14px;margin-top:24px;max-width:620px}
@@ -83,12 +77,11 @@
 .pattern-line{max-width:620px;margin:20px 0 0;padding:16px 0 0;border-top:1px solid var(--border-soft);font-size:15px;color:rgba(0,0,0,.72);line-height:1.72}
 .pattern-line strong{color:var(--ink);font-weight:600}
 
-/* ── Compressed bottom-half sections ── */
+/* ── Compact bottom sections ── */
 .section--compact{padding:18px 0}
 .section--compact .section__header{margin-bottom:14px}
 .section--compact .section__header h2{font-size:24px}
-.section--compact .section__header p{margin:8px 0 0;font-size:14px;color:rgba(0,0,0,.60)}
-.section--compact .prose p{font-size:14px;margin:0 0 10px}
+.section--compact .section__header p{margin:6px 0 0;font-size:14px;color:rgba(0,0,0,.58)}
 
 @media(min-width:860px){
   .examine-grid{grid-template-columns:repeat(3,1fr)}
@@ -98,6 +91,7 @@
   .evidence-stats{grid-template-columns:repeat(3,1fr)}
   .section--compact{padding:24px 0}
 }
+```
 
   </style>
 </head>
@@ -127,6 +121,7 @@
   <div class="wrap hero__inner">
     <div class="kicker">Health &amp; Safety Stress Test</div>
 
+```
 <h1 class="hero__title">
   Companies that had policies, audits, consultants, internal H&S teams were still convicted.
 </h1>
@@ -167,6 +162,7 @@
       </p>
     </div>
 
+```
 <div class="evidence-stats">
   <div class="evidence-stat">
     <div class="stat-number">9 of 9</div>
@@ -236,6 +232,7 @@
 <p class="cases-link">
   <a href="https://tpea.co.nz/hs-stress-test-cases.html">Full case analysis &rarr;</a>
 </p>
+```
 
   </div>
 </section>
@@ -284,7 +281,7 @@
   </div>
 </section>
 
-<!-- ═══ WHAT IT EXAMINES ═══ -->
+<!-- ═══ WHAT THE STRESS TEST COVERS ═══ -->
 
 <section class="section--compact section--muted">
   <div class="wrap">
@@ -293,80 +290,42 @@
       <p>Six areas that shape how your governance reads under scrutiny.</p>
     </div>
 
+```
 <div class="examine-grid">
   <div class="examine-item">
     <h3>Policy Architecture</h3>
-    <p>Do your policies reflect what actually happens &mdash; or exist independently of it?</p>
+    <p>Documented policies vs operational reality.</p>
   </div>
   <div class="examine-item">
     <h3>Risk Registers</h3>
-    <p>Are identified risks actively governed or has the register become a static artefact?</p>
+    <p>Active governance vs static artefact.</p>
   </div>
   <div class="examine-item">
     <h3>Incident Records</h3>
-    <p>What does the pattern of recorded incidents reveal &mdash; and what do the absences reveal?</p>
+    <p>What the patterns reveal &mdash; and the absences.</p>
   </div>
   <div class="examine-item">
     <h3>Training &amp; Competency</h3>
-    <p>Do records demonstrate genuine capability or procedural compliance?</p>
+    <p>Genuine capability vs procedural compliance.</p>
   </div>
   <div class="examine-item">
     <h3>Governance Minutes</h3>
-    <p>Does H&amp;S appear as active oversight &mdash; or only after something goes wrong?</p>
+    <p>Active oversight vs post-incident discovery.</p>
   </div>
   <div class="examine-item">
     <h3>Officer Duty Alignment</h3>
-    <p>Does the governance trail support a credible due diligence defence under HSWA s44?</p>
+    <p>Whether the trail supports a credible s44 defence.</p>
   </div>
 </div>
 
-  </div>
-</section>
+<p class="output-summary">
+  You receive a structured Exposure Report showing how your governance trail reads
+  when assembled by someone looking for accountability &mdash;
+  where evidence stands on its own, where it diverges from what you believe,
+  and an Exposure Index score measuring how your governance reads under scrutiny.
+</p>
+```
 
-<!-- ═══ WHAT YOU RECEIVE ═══ -->
-
-<section class="section--compact">
-  <div class="wrap">
-    <div class="section__header">
-      <h2>What You Receive</h2>
-      <p>A structured Exposure Report. One document. Fixed scope.</p>
-    </div>
-
-<ul class="output-list">
-  <li>How your governance trail reads when assembled by someone looking for accountability.</li>
-  <li>Where evidence stands on its own and where it would need verbal explanation you may never give.</li>
-  <li>Where what you believe and what an investigator would conclude begin to diverge.</li>
-  <li>Ambiguity in the record that an investigator would interpret, not ignore.</li>
-  <li>An Exposure Index score &mdash; a single measure of how your governance reads under scrutiny.</li>
-</ul>
-
-  </div>
-</section>
-
-<!-- ═══ WHO IT'S FOR ═══ -->
-
-<section class="section--compact section--muted">
-  <div class="wrap">
-    <div class="section__header">
-      <h2>Who This Is For</h2>
-    </div>
-    <div class="prose">
-      <p>
-        Directors and officers of operational businesses who carry personal obligations
-        under HSWA Section 44. Leaders whose systems feel adequate &mdash;
-        but who have never tested what adequate looks like
-        when someone else reconstructs their decisions.
-      </p>
-      <p>
-        The s44 due diligence duty is personal. It is non-delegable.
-        It carries criminal exposure. It cannot be discharged by pointing to
-        a policy, a consultant, or an audit.
-        If something goes wrong, the question is what <strong>you</strong> did &mdash;
-        and what the documents prove you did.
-      </p>
-    </div>
-    <div class="sector-tags">
-    </div>
   </div>
 </section>
 
@@ -378,6 +337,7 @@
       <h2>How It Works</h2>
     </div>
 
+```
 <div class="steps-grid">
   <div class="step-card">
     <h3>Conversation &amp; Engagement</h3>
@@ -389,7 +349,7 @@
   </div>
   <div class="step-card">
     <h3>Analysis</h3>
-    <p>Your governance examined through the interpretive lens investigators apply after serious incidents. How it reads, not how it feels.</p>
+    <p>Your governance examined through the interpretive lens investigators apply after serious incidents.</p>
   </div>
   <div class="step-card">
     <h3>Exposure Report</h3>
@@ -397,22 +357,12 @@
   </div>
 </div>
 
-  </div>
-</section>
+<p class="boundary-line">
+  No advisory. No remediation. No ongoing engagement.
+  The value is in the interpretation, not in what follows it.
+</p>
+```
 
-<!-- ═══ BOUNDARY ═══ -->
-
-<section class="section--compact section--muted">
-  <div class="wrap">
-    <div class="boundary-card">
-      <h3>Scope and Boundary</h3>
-      <div class="boundary-lines">
-        The Stress Test examines your documentation as it exists today,
-        delivers a structured Exposure Report, and ends.<br /><br />
-        No advisory. No remediation. No ongoing engagement.
-        The value is in the interpretation, not in what follows it.
-      </div>
-    </div>
   </div>
 </section>
 
@@ -422,7 +372,7 @@
   <div class="wrap">
     <h2>Begin a Conversation</h2>
     <p class="cta-sub">
-      The H&amp;S Stress Test is currently available by invitation only
+      The H&amp;S Stress Test is available by invitation only
       as part of a limited initial trial.
       If you have been referred or would like to discuss whether it fits
       your situation, the first step is a brief conversation.
@@ -431,10 +381,6 @@
       <a class="btn btn--accent" href="mailto:enquiries@tpea.co.nz?subject=H%26S%20Stress%20Test%20Enquiry">Email us here</a>
     </div>
     <p class="cta-email"><a href="mailto:enquiries@tpea.co.nz">enquiries@tpea.co.nz</a></p>
-    <p class="authority-line">
-      TPEA was founded by Kory Fagan &mdash; 25 years in NZ mid-market private equity,
-      including as a founding partner of NZ Equity Partners.
-    </p>
   </div>
 </section>
 
