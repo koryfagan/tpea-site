@@ -25,27 +25,27 @@
     .dark-section .prose p{color:rgba(255,255,255,.78)}
     .dark-section .prose strong{color:#fff}
 
-    .examine-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px}
-    .examine-item{border:1px solid var(--border);background:#fff;padding:22px}
-    .examine-item h3{margin:0;font-size:16px;letter-spacing:-0.01em}
-    .examine-item p{margin:10px 0 0;color:rgba(0,0,0,.72);font-size:15px}
+    .examine-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:16px}
+    .examine-item{border:1px solid var(--border);background:#fff;padding:16px 18px}
+    .examine-item h3{margin:0;font-size:15px;letter-spacing:-0.01em}
+    .examine-item p{margin:6px 0 0;color:rgba(0,0,0,.64);font-size:14px}
 
-    .output-list{max-width:620px;list-style:none;padding:0;margin:20px 0 0}
-    .output-list li{padding:12px 0 12px 22px;border-bottom:1px solid var(--border-soft);color:rgba(0,0,0,.72);position:relative;font-size:15px}
+    .output-list{max-width:620px;list-style:none;padding:0;margin:14px 0 0}
+    .output-list li{padding:9px 0 9px 20px;border-bottom:1px solid var(--border-soft);color:rgba(0,0,0,.72);position:relative;font-size:14px;line-height:1.6}
     .output-list li::before{content:"—";position:absolute;left:0;color:var(--accent);font-weight:600}
     .output-list li:last-child{border-bottom:none}
 
-    .sector-tags{margin-top:18px;font-size:13px;color:rgba(0,0,0,.50);letter-spacing:.01em}
+    .sector-tags{margin-top:14px;font-size:13px;color:rgba(0,0,0,.50);letter-spacing:.01em}
 
-    .steps-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px;counter-reset:step}
-    .step-card{border:1px solid var(--border);background:#fff;padding:22px;counter-increment:step}
-    .step-card h3{margin:0;font-size:16px;letter-spacing:-0.01em}
+    .steps-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:16px;counter-reset:step}
+    .step-card{border:1px solid var(--border);background:#fff;padding:16px 18px;counter-increment:step}
+    .step-card h3{margin:0;font-size:15px;letter-spacing:-0.01em}
     .step-card h3::before{content:counter(step) ". ";color:var(--ink);font-weight:700}
-    .step-card p{margin:10px 0 0;color:rgba(0,0,0,.72);font-size:15px}
+    .step-card p{margin:6px 0 0;color:rgba(0,0,0,.64);font-size:14px}
 
-    .boundary-card{border:1px solid var(--border);background:#fff;padding:22px;max-width:620px}
-    .boundary-card h3{margin:0 0 12px;font-size:16px;letter-spacing:-0.01em}
-    .boundary-card .boundary-lines{color:rgba(0,0,0,.64);line-height:2.1;font-size:15px}
+    .boundary-card{border:1px solid var(--border);background:#fff;padding:18px;max-width:620px}
+    .boundary-card h3{margin:0 0 10px;font-size:15px;letter-spacing:-0.01em}
+    .boundary-card .boundary-lines{color:rgba(0,0,0,.64);line-height:1.9;font-size:14px}
 
     .pullquote{max-width:620px;border-left:3px solid var(--accent);padding:0 0 0 20px;margin:24px 0;font-size:17px;line-height:1.6;color:var(--ink);font-weight:500;letter-spacing:-0.01em}
     .dark-section .pullquote{color:#fff;border-left-color:rgba(255,255,255,.4)}
@@ -59,7 +59,7 @@
 
     .authority-line{margin-top:20px;font-size:14px;color:rgba(0,0,0,.50);max-width:480px}
 
-    /* ── Evidence section additions ── */
+    /* ── Evidence section ── */
     .evidence-stats{display:grid;grid-template-columns:1fr;gap:14px;margin-top:24px;max-width:620px}
     .evidence-stat{border-left:3px solid var(--accent);padding:4px 0 4px 18px}
     .evidence-stat .stat-number{font-size:28px;font-weight:700;color:var(--ink);letter-spacing:-0.02em;line-height:1.2}
@@ -82,12 +82,20 @@
     .pattern-line{max-width:620px;margin:20px 0 0;padding:16px 0 0;border-top:1px solid var(--border-soft);font-size:15px;color:rgba(0,0,0,.72);line-height:1.72}
     .pattern-line strong{color:var(--ink);font-weight:600}
 
+    /* ── Compressed bottom-half sections ── */
+    .section--compact{padding:18px 0}
+    .section--compact .section__header{margin-bottom:14px}
+    .section--compact .section__header h2{font-size:24px}
+    .section--compact .section__header p{margin:8px 0 0;font-size:14px;color:rgba(0,0,0,.60)}
+    .section--compact .prose p{font-size:14px;margin:0 0 10px}
+
     @media(min-width:860px){
       .examine-grid{grid-template-columns:repeat(3,1fr)}
-      .steps-grid{grid-template-columns:repeat(3,1fr)}
+      .steps-grid{grid-template-columns:repeat(4,1fr)}
       .dark-section{padding:48px 0}
       .cta-section{padding:48px 0}
       .evidence-stats{grid-template-columns:repeat(3,1fr)}
+      .section--compact{padding:24px 0}
     }
   </style>
 </head>
@@ -268,44 +276,44 @@
 </section>
 
 <!-- ═══ WHAT IT EXAMINES ═══ -->
-<section class="section section--muted">
+<section class="section--compact section--muted">
   <div class="wrap">
     <div class="section__header">
       <h2>What the Stress Test Examines</h2>
-      <p>Six structural areas. Each shapes how your governance reads under scrutiny.</p>
+      <p>Six areas that shape how your governance reads under scrutiny.</p>
     </div>
 
     <div class="examine-grid">
       <div class="examine-item">
         <h3>Policy Architecture</h3>
-        <p>Whether your documented policies reflect operational reality &mdash; or exist independently of it.</p>
+        <p>Do your policies reflect what actually happens &mdash; or exist independently of it?</p>
       </div>
       <div class="examine-item">
         <h3>Risk Registers</h3>
-        <p>Whether identified risks are actively governed or the register has become a static artefact.</p>
+        <p>Are identified risks actively governed or has the register become a static artefact?</p>
       </div>
       <div class="examine-item">
         <h3>Incident Records</h3>
-        <p>What the pattern of recorded incidents reveals about oversight &mdash; and what the absences reveal.</p>
+        <p>What does the pattern of recorded incidents reveal &mdash; and what do the absences reveal?</p>
       </div>
       <div class="examine-item">
         <h3>Training &amp; Competency</h3>
-        <p>Whether records demonstrate genuine capability or procedural compliance.</p>
+        <p>Do records demonstrate genuine capability or procedural compliance?</p>
       </div>
       <div class="examine-item">
         <h3>Governance Minutes</h3>
-        <p>Whether H&amp;S appears in board records as active oversight &mdash; or only after something goes wrong.</p>
+        <p>Does H&amp;S appear as active oversight &mdash; or only after something goes wrong?</p>
       </div>
       <div class="examine-item">
         <h3>Officer Duty Alignment</h3>
-        <p>Whether the governance trail supports a credible due diligence defence under HSWA Section&nbsp;44.</p>
+        <p>Does the governance trail support a credible due diligence defence under HSWA s44?</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ═══ WHAT YOU RECEIVE ═══ -->
-<section class="section">
+<section class="section--compact">
   <div class="wrap">
     <div class="section__header">
       <h2>What You Receive</h2>
@@ -313,17 +321,17 @@
     </div>
 
     <ul class="output-list">
-      <li>How your governance trail reads when assembled by someone looking for accountability, not someone looking to help.</li>
-      <li>Where evidence stands on its own and where it would require verbal explanation you may never get to give.</li>
-      <li>The specific points where what you believe about your governance and what an investigator would conclude begin to diverge.</li>
-      <li>Ambiguity in the governance record that an investigator would interpret, not ignore.</li>
-      <li>An Exposure Index score &mdash; a single measure of how your safety governance would likely be read under scrutiny.</li>
+      <li>How your governance trail reads when assembled by someone looking for accountability.</li>
+      <li>Where evidence stands on its own and where it would need verbal explanation you may never give.</li>
+      <li>Where what you believe and what an investigator would conclude begin to diverge.</li>
+      <li>Ambiguity in the record that an investigator would interpret, not ignore.</li>
+      <li>An Exposure Index score &mdash; a single measure of how your governance reads under scrutiny.</li>
     </ul>
   </div>
 </section>
 
 <!-- ═══ WHO IT'S FOR ═══ -->
-<section class="section section--muted">
+<section class="section--compact section--muted">
   <div class="wrap">
     <div class="section__header">
       <h2>Who This Is For</h2>
@@ -331,18 +339,14 @@
     <div class="prose">
       <p>
         Directors and officers of operational businesses who carry personal obligations
-        under the Health and Safety at Work Act 2015. Leaders whose systems feel adequate &mdash;
-        but who have never tested what adequate looks like when someone else reconstructs
-        their decisions.
+        under HSWA Section 44. Leaders whose systems feel adequate &mdash;
+        but who have never tested what adequate looks like
+        when someone else reconstructs their decisions.
       </p>
       <p>
-        Under HSWA Section 44, officers must exercise due diligence to ensure their
-        organisation meets its health and safety obligations. That duty is personal.
-        It is non-delegable. It carries criminal exposure.
-        It cannot be discharged by pointing to the existence of a policy,
-        the engagement of a consultant, or the conduct of an audit.
-      </p>
-      <p>
+        The s44 due diligence duty is personal. It is non-delegable.
+        It carries criminal exposure. It cannot be discharged by pointing to
+        a policy, a consultant, or an audit.
         If something goes wrong, the question is what <strong>you</strong> did &mdash;
         and what the documents prove you did.
       </p>
@@ -355,7 +359,7 @@
 </section>
 
 <!-- ═══ PROCESS ═══ -->
-<section class="section">
+<section class="section--compact">
   <div class="wrap">
     <div class="section__header">
       <h2>How It Works</h2>
@@ -363,41 +367,35 @@
 
     <div class="steps-grid">
       <div class="step-card">
-        <h3>Conversation</h3>
-        <p>A brief discussion to confirm the Stress Test is appropriate for your situation. No obligation.</p>
-      </div>
-      <div class="step-card">
-        <h3>Engagement</h3>
-        <p>Scope and terms confirmed. Engagement letter issued. 50% deposit to commence.</p>
+        <h3>Conversation &amp; Engagement</h3>
+        <p>Brief discussion to confirm fit. Scope confirmed. Engagement letter issued. 50% deposit to commence.</p>
       </div>
       <div class="step-card">
         <h3>Documents</h3>
-        <p>You provide existing H&amp;S documentation &mdash; policies, risk registers, incident records, training logs, governance minutes. No additional narrative required.</p>
+        <p>You provide existing H&amp;S documentation &mdash; policies, risk registers, incident records, training logs, governance minutes.</p>
       </div>
       <div class="step-card">
         <h3>Analysis</h3>
-        <p>Your governance examined through the same interpretive lens investigators apply after serious incidents. How it reads, not how it feels.</p>
+        <p>Your governance examined through the interpretive lens investigators apply after serious incidents. How it reads, not how it feels.</p>
       </div>
       <div class="step-card">
         <h3>Exposure Report</h3>
-        <p>Structured report delivered including your Exposure Index score. The engagement ends here.</p>
+        <p>Structured report delivered with your Exposure Index score. The engagement ends here.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ═══ BOUNDARY ═══ -->
-<section class="section section--muted">
+<section class="section--compact section--muted">
   <div class="wrap">
     <div class="boundary-card">
       <h3>Scope and Boundary</h3>
       <div class="boundary-lines">
-        The Stress Test is a finite interpretive exercise. It examines your
-        documentation as it exists today, delivers a structured Exposure Report,
-        and ends.<br /><br />
+        The Stress Test examines your documentation as it exists today,
+        delivers a structured Exposure Report, and ends.<br /><br />
         No advisory. No remediation. No ongoing engagement.
-        That constraint is deliberate. The value is in the interpretation,
-        not in what follows it.
+        The value is in the interpretation, not in what follows it.
       </div>
     </div>
   </div>
