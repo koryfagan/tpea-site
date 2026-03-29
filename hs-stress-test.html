@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Health &amp; Safety Stress Test — The Private Equity Advantage</title>
-  <meta name="description" content="A pre-incident interpretive review. How your H&amp;S governance reads when investigators reconstruct your decisions after a serious workplace event." />
+  <meta name="description" content="Companies that invested in H&amp;S — consultants, audits, internal teams — were still convicted. The gap between what directors believe and what investigators find is where personal liability lives." />
   <meta property="og:title" content="Health &amp; Safety Stress Test — TPEA" />
-  <meta property="og:description" content="What story does your safety governance tell when someone else reads it? Pre-incident interpretive review for NZ owner-directors." />
+  <meta property="og:description" content="9 out of 9 companies with external H&amp;S support were still convicted. A pre-incident interpretive review for NZ directors." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tpea.co.nz/hs-stress-test" />
   <meta property="og:site_name" content="The Private Equity Advantage" />
@@ -59,11 +59,32 @@
 
     .authority-line{margin-top:20px;font-size:14px;color:rgba(0,0,0,.50);max-width:480px}
 
+    /* ── Evidence section additions ── */
+    .evidence-stats{display:grid;grid-template-columns:1fr;gap:14px;margin-top:24px;max-width:620px}
+    .evidence-stat{border-left:3px solid var(--accent);padding:4px 0 4px 18px}
+    .evidence-stat .stat-number{font-size:28px;font-weight:700;color:var(--ink);letter-spacing:-0.02em;line-height:1.2}
+    .evidence-stat .stat-label{font-size:14px;color:rgba(0,0,0,.60);margin-top:2px;line-height:1.4}
+
+    .dark-section .evidence-stat{border-left-color:rgba(255,255,255,.4)}
+    .dark-section .evidence-stat .stat-number{color:#fff}
+    .dark-section .evidence-stat .stat-label{color:rgba(255,255,255,.60)}
+
+    .case-card{border:1px solid var(--border);background:#fff;padding:22px;margin-top:14px;max-width:620px}
+    .case-card h3{margin:0;font-size:16px;letter-spacing:-0.01em;color:var(--ink)}
+    .case-card .case-meta{font-size:13px;color:rgba(0,0,0,.50);margin-top:4px}
+    .case-card p{margin:10px 0 0;color:rgba(0,0,0,.72);font-size:15px}
+    .case-card .case-outcome{font-size:14px;color:rgba(0,0,0,.60);margin-top:10px;padding-top:10px;border-top:1px solid var(--border-soft)}
+
+    .cases-link{margin-top:20px;font-size:15px}
+    .cases-link a{color:var(--accent);text-decoration:none;font-weight:500}
+    .cases-link a:hover{text-decoration:underline}
+
     @media(min-width:860px){
       .examine-grid{grid-template-columns:repeat(3,1fr)}
       .steps-grid{grid-template-columns:repeat(3,1fr)}
       .dark-section{padding:48px 0}
       .cta-section{padding:48px 0}
+      .evidence-stats{grid-template-columns:repeat(3,1fr)}
     }
   </style>
 </head>
@@ -76,11 +97,11 @@
       <img src="tpea-logo.png" alt="The Private Equity Advantage" class="brand__img" height="44" />
     </a>
     <nav class="nav__links" aria-label="Primary">
-  <a href="https://tpea.co.nz/#approach">The Interpretation Gap</a>
-  <a href="https://tpea.co.nz/#systems">Stress Tests</a>
-  <a href="https://tpea.co.nz/hs-stress-test.html">H&amp;S Stress Test</a>
-  <a href="https://tpea.co.nz/#about">About</a>
-  </nav>
+      <a href="https://tpea.co.nz/#approach">The Interpretation Gap</a>
+      <a href="https://tpea.co.nz/#systems">Stress Tests</a>
+      <a href="https://tpea.co.nz/hs-stress-test.html">H&amp;S Stress Test</a>
+      <a href="https://tpea.co.nz/#about">About</a>
+    </nav>
   </div>
 </header>
 
@@ -92,7 +113,8 @@
     <div class="kicker">Health &amp; Safety Stress Test</div>
 
     <h1 class="hero__title">
-      If something goes wrong tomorrow, how will investigators interpret what you did?
+      Companies that invested in safety were still convicted.
+      The gap was in what they didn't check.
     </h1>
 
     <p class="hero__sub">
@@ -102,45 +124,101 @@
 
     <div class="hero__cta">
       <a class="btn btn--accent" href="#contact">Begin a Conversation</a>
-      <a class="btn btn--ghost" href="https://tpea.co.nz/#systems">All Stress Tests</a>
+      <a class="btn btn--ghost" href="https://tpea.co.nz/hs-stress-test-cases.html">See the Evidence</a>
     </div>
   </div>
 </section>
 
-<!-- ═══ THE PROBLEM ═══ -->
+<!-- ═══ THE EVIDENCE ═══ -->
 <section class="section">
   <div class="wrap">
     <div class="section__header">
-      <h2>The Problem</h2>
+      <h2>What the Prosecution Record Shows</h2>
     </div>
     <div class="prose">
       <p>
-        Every major corporate event eventually ends up in a room where outsiders
-        reconstruct what leadership did and why.
-        Regulators. Insurers. Investigators. Courts.
+        Since the Health and Safety at Work Act came into force in 2016,
+        a clear pattern has emerged from the courts.
+        Companies that believed their governance was adequate &mdash;
+        companies that had policies, audits, consultants, internal H&amp;S teams &mdash;
+        were convicted because of the gap between what they documented
+        and what was actually happening.
       </p>
       <p>
-        At that moment the company is no longer judged by how the organisation
-        felt internally. It is judged by how its decisions appear
-        <strong>when someone else tells the story</strong>.
-      </p>
-      <p>
-        Investigators gather fragments across the organisation &mdash; board minutes,
-        incident records, escalation pathways, risk registers &mdash; and assemble them
-        into a narrative about leadership behaviour.
-        Decisions that seemed reasonable at the time may appear negligent later.
-        The difference between the two often determines how directors are judged.
-      </p>
-      <p>
-        Most directors only encounter that narrative after the event that triggered it.
-        By that stage the organisation is no longer explaining itself.
-        It is being explained by others.
+        The courts do not measure what directors intended.
+        They measure what the documents prove &mdash;
+        and what the absences prove directors didn't do.
       </p>
     </div>
+
+    <div class="evidence-stats">
+      <div class="evidence-stat">
+        <div class="stat-number">9 of 9</div>
+        <div class="stat-label">Companies with external H&amp;S support &mdash; consultants, audits, internal teams &mdash; were still convicted.</div>
+      </div>
+      <div class="evidence-stat">
+        <div class="stat-number">45%</div>
+        <div class="stat-label">Of prosecuted companies believed their governance was adequate before the incident.</div>
+      </div>
+      <div class="evidence-stat">
+        <div class="stat-number">$130k</div>
+        <div class="stat-label">Personal fine for a CEO the judge called &ldquo;conscientious&rdquo; &mdash; who had expanded the H&amp;S team and commissioned a KPMG audit.</div>
+      </div>
+    </div>
+
+    <!-- Case highlights -->
+    <div class="case-card">
+      <h3>A CEO who did the right things &mdash; and was still convicted</h3>
+      <p>
+        Tony Gibson expanded the H&amp;S team at Ports of Auckland.
+        He introduced the PortSafe management system.
+        He commissioned a KPMG audit.
+        The judge acknowledged he was a conscientious CEO.
+        He was still personally convicted because he could not demonstrate
+        that those investments translated into what was actually happening
+        on the wharves &mdash; particularly on night shifts, where monitoring was absent.
+      </p>
+      <p class="case-outcome">
+        Maritime NZ v Gibson [2024]. Personal fine: $130,000 + costs.
+      </p>
+    </div>
+
+    <div class="case-card">
+      <h3>An external consultant made the prosecution easier, not harder</h3>
+      <p>
+        Point Lumber hired an external H&amp;S consultant in 2017.
+        The consultant identified an unguarded conveyor belt and recommended it be safeguarded.
+        The company did not implement the recommendation.
+        Five years later, a 23-year-old worker was killed by that conveyor.
+        The consultant's report became the prosecution's strongest evidence &mdash;
+        a dated, documented record of a known hazard that was never addressed.
+      </p>
+      <p class="case-outcome">
+        Point Lumber Ltd + Sloper [2025]. Director fined $60,000. Company fined $250,000. Reparation: $140,000.
+      </p>
+    </div>
+
+    <div class="case-card">
+      <h3>They identified the hazard. They chose to address a third of it.</h3>
+      <p>
+        NZSki's own 2015 risk assessment identified 28 fence posts as likely to cause
+        high-speed collisions. Management decided to pad only 9.
+        Eight years later, a skier died hitting an unpadded post.
+        The court convicted NZSki &mdash; not for failing to identify the hazard,
+        but for making a governance decision to partially address it.
+      </p>
+      <p class="case-outcome">
+        WorkSafe v NZSki [2023]. Fine: $440,000.
+      </p>
+    </div>
+
+    <p class="cases-link">
+      <a href="https://tpea.co.nz/hs-stress-test-cases.html">Full case analysis &rarr;</a>
+    </p>
   </div>
 </section>
 
-<!-- ═══ THE SHIFT ═══ -->
+<!-- ═══ THE INTERPRETATION GAP ═══ -->
 <section class="dark-section">
   <div class="wrap">
     <div class="section__header">
@@ -148,25 +226,31 @@
     </div>
     <div class="prose">
       <p>
-        Between how you experience your governance and how a regulator reconstructs it
-        lies a structural gap. That gap is where personal liability lives.
+        These companies were not convicted for having bad systems.
+        They were convicted because the systems they believed they had
+        and the systems investigators reconstructed were not the same thing.
+      </p>
+      <p>
+        That distance &mdash; between how you experience your governance internally
+        and how a regulator, insurer, or court reconstructs it under scrutiny &mdash;
+        is the Interpretation Gap. It is where personal liability lives.
       </p>
       <p>
         Investigators do not assess intentions. They read signals.
         They do not ask whether your systems felt adequate.
-        They ask what the documents prove you did &mdash; and what the absences prove you didn't.
+        They ask what the documents prove you did &mdash;
+        and what the absences prove you didn't.
       </p>
       <p>
-        <strong>Serious companies are not judged by the systems they believe they have.
-        They are judged by the story their decisions tell under scrutiny.</strong>
+        <strong>Having a consultant does not close the gap.
+        Having an audit does not close the gap.
+        Having an H&amp;S team does not close the gap.
+        The prosecution record proves this.</strong>
       </p>
       <p>
-        The Stress Test acts like an X-ray for leadership systems.
-        On the surface an organisation can appear healthy.
-        Policies exist. Processes exist. Controls exist.
-        But X-rays reveal structural signals that cannot be seen externally.
-        The Stress Test performs the same function for safety governance &mdash;
-        it reveals how the organisation will be judged when scrutiny arrives.
+        The gap closes only when you see your governance
+        the way an investigator would reconstruct it &mdash;
+        before an event forces the question.
       </p>
       <p class="pullquote">
         The moment a director registers that investigators will read their decisions
@@ -227,7 +311,7 @@
       <li>Where evidence stands on its own and where it would require verbal explanation you may never get to give.</li>
       <li>The specific points where what you believe about your governance and what an investigator would conclude begin to diverge.</li>
       <li>Ambiguity in the governance record that an investigator would interpret, not ignore.</li>
-      <li>An Exposure Index score, a single measure of how your safety governance would likely be read under scrutiny.</li>
+      <li>An Exposure Index score &mdash; a single measure of how your safety governance would likely be read under scrutiny.</li>
     </ul>
   </div>
 </section>
@@ -246,15 +330,11 @@
         their decisions.
       </p>
       <p>
-        The most disciplined organisations deliberately examine themselves
-        the way outsiders eventually will. They close the Interpretation Gap
-        before an event forces the question.
-      </p>
-      <p>
         Under HSWA Section 44, officers must exercise due diligence to ensure their
         organisation meets its health and safety obligations. That duty is personal.
-        It is non-delegable. It carries criminal exposure. It cannot be discharged
-        by pointing to the existence of a policy.
+        It is non-delegable. It carries criminal exposure.
+        It cannot be discharged by pointing to the existence of a policy,
+        the engagement of a consultant, or the conduct of an audit.
       </p>
       <p>
         If something goes wrong, the question is what <strong>you</strong> did &mdash;
@@ -262,38 +342,8 @@
       </p>
     </div>
     <div class="sector-tags">
-      
-    </div>
-  </div>
-</section>
-
-<!-- ═══ WHY NOW ═══ -->
-<section class="dark-section">
-  <div class="wrap">
-    <div class="section__header">
-      <h2>Why Now</h2>
-    </div>
-    <div class="prose">
-      <p>
-        Operational companies rarely encounter serious problems because of a single mistake.
-        Organisations drift. Signals weaken. Escalation slows. Decisions become normalised.
-        Individually these signals appear harmless. Over time they compound.
-      </p>
-      <p>
-        The Gibson decision confirmed that directors face personal criminal prosecution
-        for safety governance failures &mdash; not just the company.
-        The HSWA Amendment Bill introduced in February 2026
-        signals further tightening of officer obligations.
-        The regulatory direction is not ambiguous.
-      </p>
-      <p>
-        Most directors assume their governance will hold under scrutiny because
-        it has never been tested. That assumption survives until the moment it doesn't.
-      </p>
-      <p>
-        The question is not whether scrutiny will arrive.
-        The question is whether <strong>your governance trail tells the story you think it does</strong>.
-      </p>
+      Construction &middot; Manufacturing &middot; Transport &amp; Logistics
+      &middot; Agriculture &middot; Infrastructure Services &middot; Industrial Services
     </div>
   </div>
 </section>
