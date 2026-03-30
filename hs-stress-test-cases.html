@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -13,21 +14,16 @@
   <link rel="icon" href="favicon.png" />
   <link rel="stylesheet" href="styles.css" />
   <style>
-    /* ── Cases page extensions ── */
-
     .prose{max-width:680px;line-height:1.72}
     .prose p{margin:0 0 14px;color:rgba(0,0,0,.72)}
     .prose p:last-child{margin-bottom:0}
     .prose strong{color:var(--ink);font-weight:600}
-
     .dark-section{background:var(--navy);color:#fff;padding:32px 0}
     .dark-section .section__header h2{color:#fff}
     .dark-section .prose p{color:rgba(255,255,255,.78)}
     .dark-section .prose strong{color:#fff}
-
     .pullquote{max-width:680px;border-left:3px solid var(--accent);padding:0 0 0 20px;margin:24px 0;font-size:17px;line-height:1.6;color:var(--ink);font-weight:500;letter-spacing:-0.01em}
     .dark-section .pullquote{color:#fff;border-left-color:rgba(255,255,255,.4)}
-
     .case-full{border:1px solid var(--border);background:#fff;padding:26px;margin-top:20px;max-width:680px}
     .case-full h3{margin:0;font-size:18px;letter-spacing:-0.01em;color:var(--ink)}
     .case-full .case-meta{font-size:13px;color:rgba(0,0,0,.50);margin-top:4px;line-height:1.6}
@@ -35,24 +31,18 @@
     .case-full .case-finding{margin-top:14px;padding:14px;background:rgba(0,0,0,.03);font-size:14px;color:rgba(0,0,0,.72);line-height:1.7}
     .case-full .case-finding strong{color:var(--ink);font-weight:600}
     .case-full .case-outcome{font-size:14px;color:rgba(0,0,0,.50);margin-top:14px;padding-top:14px;border-top:1px solid var(--border-soft)}
-
     .pattern-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:24px;max-width:680px}
     .pattern-card{border-left:3px solid var(--accent);padding:4px 0 4px 18px}
     .pattern-card h4{margin:0;font-size:15px;color:var(--ink);font-weight:600}
     .pattern-card p{margin:6px 0 0;font-size:14px;color:rgba(0,0,0,.60);line-height:1.6}
-
     .dark-section .pattern-card{border-left-color:rgba(255,255,255,.4)}
     .dark-section .pattern-card h4{color:#fff}
     .dark-section .pattern-card p{color:rgba(255,255,255,.60)}
-
     .section-divider{margin:28px 0;border:none;border-top:1px solid var(--border-soft);max-width:680px}
-
     .back-link{margin-top:20px;font-size:15px}
     .back-link a{color:var(--accent);text-decoration:none;font-weight:500}
     .back-link a:hover{text-decoration:underline}
-
     .source-note{font-size:13px;color:rgba(0,0,0,.45);margin-top:8px;max-width:680px;line-height:1.6}
-
     @media(min-width:860px){
       .dark-section{padding:48px 0}
       .pattern-grid{grid-template-columns:repeat(3,1fr)}
@@ -60,8 +50,6 @@
   </style>
 </head>
 <body>
-
-<!-- NAV -->
 <header class="nav">
   <div class="wrap nav__inner">
     <a class="brand brand--logo" href="https://tpea.co.nz" aria-label="The Private Equity Advantage">
@@ -75,48 +63,27 @@
     </nav>
   </div>
 </header>
-
 <main>
-
-<!-- ═══ HERO ═══ -->
 <section class="hero">
   <div class="wrap hero__inner">
     <div class="kicker">H&amp;S Stress Test &mdash; Case Evidence</div>
-
-    <h1 class="hero__title">
-      What the courts found when they reconstructed<br />
-      what directors believed was adequate
-    </h1>
-
-    <p class="hero__sub">
-      HSWA prosecution analysis. Public record cases where governance systems
-      that felt adequate were judged differently under scrutiny.
-    </p>
-
+    <h1 class="hero__title">What the courts found when they reconstructed<br />what directors believed was adequate</h1>
+    <p class="hero__sub">HSWA prosecution analysis. Public record cases where governance systems that felt adequate were judged differently under scrutiny.</p>
     <div class="hero__cta">
       <a class="btn btn--accent" href="https://tpea.co.nz/hs-stress-test.html">H&amp;S Stress Test</a>
       <a class="btn btn--ghost" href="#patterns">The Pattern</a>
     </div>
   </div>
 </section>
-
-<!-- ═══ THE PATTERN ═══ -->
 <section id="patterns" class="dark-section">
   <div class="wrap">
     <div class="section__header">
       <h2>The Pattern Across 40 Prosecutions</h2>
     </div>
     <div class="prose">
-      <p>
-        We analysed 40 HSWA prosecutions from 2016 to 2026.
-        For each case we asked one question: what was the state of the company's
-        governance <strong>before</strong> the incident that triggered prosecution?
-      </p>
-      <p>
-        Three patterns emerged.
-      </p>
+      <p>We analysed 40 HSWA prosecutions from 2016 to 2026. For each case we asked one question: what was the state of the company's governance <strong>before</strong> the incident that triggered prosecution?</p>
+      <p>Three patterns emerged.</p>
     </div>
-
     <div class="pattern-grid">
       <div class="pattern-card">
         <h4>Believed adequate &mdash; 27%</h4>
@@ -131,344 +98,137 @@
         <p>No systems, no policies, no governance framework. Almost exclusively operators with fewer than 10 staff.</p>
       </div>
     </div>
-
     <div class="prose" style="margin-top:24px">
-      <p>
-        The critical finding: the &ldquo;known gaps&rdquo; cohort splits in two.
-        Some companies made conscious decisions to defer action.
-        Others commissioned audits, received findings, and let remediation
-        slip without anyone formally deciding not to act.
-        The directors in the second group experienced their governance
-        identically to those who believed it was adequate.
-        They didn't know the gap existed.
-      </p>
-      <p>
-        <strong>When you account for this, roughly 45% of prosecuted companies
-        were led by directors who believed their H&amp;S governance was working.</strong>
-      </p>
+      <p>The critical finding: the &ldquo;known gaps&rdquo; cohort splits in two. Some companies made conscious decisions to defer action. Others commissioned audits, received findings, and let remediation slip without anyone formally deciding not to act. The directors in the second group experienced their governance identically to those who believed it was adequate. They didn't know the gap existed.</p>
+      <p><strong>When you account for this, roughly 45% of prosecuted companies were led by directors who believed their H&amp;S governance was working.</strong></p>
     </div>
   </div>
 </section>
-
-<!-- ═══ EXTERNAL SUPPORT FINDING ═══ -->
 <section class="section">
   <div class="wrap">
     <div class="section__header">
       <h2>Having a Consultant Did Not Protect Them</h2>
     </div>
     <div class="prose">
-      <p>
-        Of the 40 cases analysed, 9 companies had confirmed external H&amp;S support &mdash;
-        external consultants, commissioned audits, internal H&amp;S teams,
-        or industry-level safety oversight.
-      </p>
-      <p>
-        <strong>All 9 were convicted.</strong> Zero acquittals in the cohort
-        that invested in external expertise.
-      </p>
-      <p>
-        In several cases the external support made the prosecution easier.
-        A consultant's report documenting an unaddressed hazard
-        becomes dated evidence of constructive knowledge.
-        An audit with unimplemented findings proves the company knew
-        what it needed to do and chose not to.
-      </p>
-      <p>
-        Having a consultant creates a record.
-        If that record shows identified risks that were not remediated,
-        it becomes prosecution evidence &mdash; not a defence.
-      </p>
+      <p>Of the 40 cases analysed, 9 companies had confirmed external H&amp;S support &mdash; external consultants, commissioned audits, internal H&amp;S teams, or industry-level safety oversight.</p>
+      <p><strong>All 9 were convicted.</strong> Zero acquittals in the cohort that invested in external expertise.</p>
+      <p>In several cases the external support made the prosecution easier. A consultant's report documenting an unaddressed hazard becomes dated evidence of constructive knowledge. An audit with unimplemented findings proves the company knew what it needed to do and chose not to.</p>
+      <p>Having a consultant creates a record. If that record shows identified risks that were not remediated, it becomes prosecution evidence &mdash; not a defence.</p>
     </div>
   </div>
 </section>
-
-<!-- ═══ LANDMARK CASES ═══ -->
 <section class="section section--muted">
   <div class="wrap">
     <div class="section__header">
       <h2>Landmark Cases</h2>
       <p>The cases that define the current enforcement landscape for NZ directors.</p>
     </div>
-
-    <!-- Gibson -->
     <div class="case-full">
       <h3>Maritime NZ v Tony Gibson [2024]</h3>
       <div class="case-meta">Ports of Auckland &middot; CEO personally charged &middot; Fatality</div>
-      <p>
-        Gibson expanded the H&amp;S team. He introduced the PortSafe management system.
-        He commissioned a KPMG audit. The judge acknowledged he was a conscientious CEO.
-      </p>
-      <p>
-        He was convicted because the court found he could not demonstrate
-        that those investments translated into operational outcomes.
-        Exclusion zones were undocumented and unenforced.
-        Night shift monitoring was absent.
-        The gap was between the system he believed he had
-        and the system investigators reconstructed.
-      </p>
-      <div class="case-finding">
-        <strong>What the court measured:</strong>
-        Not whether H&amp;S inputs existed (they did), but whether the officer
-        could demonstrate those inputs produced outcomes at the operational level.
-        Investment in systems is not the same as verification that systems work.
-      </div>
-      <p class="case-outcome">
-        Personal fine: $130,000 + $60,000 costs.
-      </p>
+      <p>Gibson expanded the H&amp;S team. He introduced the PortSafe management system. He commissioned a KPMG audit. The judge acknowledged he was a conscientious CEO.</p>
+      <p>He was convicted because the court found he could not demonstrate that those investments translated into operational outcomes. Exclusion zones were undocumented and unenforced. Night shift monitoring was absent. The gap was between the system he believed he had and the system investigators reconstructed.</p>
+      <div class="case-finding"><strong>What the court measured:</strong> Not whether H&amp;S inputs existed (they did), but whether the officer could demonstrate those inputs produced outcomes at the operational level. Investment in systems is not the same as verification that systems work.</div>
+      <p class="case-outcome">Personal fine: $130,000 + $60,000 costs.</p>
     </div>
-
-    <!-- Point Lumber -->
     <div class="case-full">
       <h3>Point Lumber Ltd + Sean Sloper [2025]</h3>
       <div class="case-meta">Timber manufacturing &middot; Director personally charged &middot; Fatality</div>
-      <p>
-        In 2017, Point Lumber hired an external H&amp;S consultant.
-        The consultant identified an unguarded conveyor belt and recommended safeguarding.
-        Neither the company nor the director implemented the recommendation.
-      </p>
-      <p>
-        In 2022, 23-year-old Ethyn McTier was entrapped in that conveyor belt and killed.
-        In 2025, both the company and the director were convicted.
-        The consultant's report &mdash; five years old &mdash; was the prosecution's
-        strongest evidence: a dated record of a known hazard that was never addressed.
-      </p>
-      <div class="case-finding">
-        <strong>What the court measured:</strong>
-        Whether identified hazards were remediated, not whether they were identified.
-        The engagement of the consultant did not reduce liability.
-        It created a documentary trail that made the conviction easier.
-      </div>
-      <p class="case-outcome">
-        Director fine: $60,000. Company fine: $250,000. Reparation: $140,000.
-      </p>
+      <p>In 2017, Point Lumber hired an external H&amp;S consultant. The consultant identified an unguarded conveyor belt and recommended safeguarding. Neither the company nor the director implemented the recommendation.</p>
+      <p>In 2022, 23-year-old Ethyn McTier was entrapped in that conveyor belt and killed. In 2025, both the company and the director were convicted. The consultant's report &mdash; five years old &mdash; was the prosecution's strongest evidence: a dated record of a known hazard that was never addressed.</p>
+      <div class="case-finding"><strong>What the court measured:</strong> Whether identified hazards were remediated, not whether they were identified. The engagement of the consultant did not reduce liability. It created a documentary trail that made the conviction easier.</div>
+      <p class="case-outcome">Director fine: $60,000. Company fine: $250,000. Reparation: $140,000.</p>
     </div>
-
-    <!-- NZSki -->
     <div class="case-full">
       <h3>WorkSafe v NZSki Limited [2023]</h3>
       <div class="case-meta">Ski resort operations &middot; Company charged &middot; Fatality</div>
-      <p>
-        NZSki's own 2015 internal risk assessment identified 28 fence posts as likely
-        to cause high-speed collisions. Management approved padding for 9.
-        Eight years later, a skier hit an unpadded post and died.
-      </p>
-      <p>
-        The court convicted NZSki. The hazard was correctly identified, rated,
-        and recorded. The failure was a governance-level decision
-        about resource allocation against a known risk.
-      </p>
-      <div class="case-finding">
-        <strong>What the court measured:</strong>
-        Not whether hazard identification was adequate (it was),
-        but whether the governance response to identified hazards was sufficient.
-        Partial implementation of known controls is a prosecutable decision.
-      </div>
-      <p class="case-outcome">
-        Fine: $440,000 (from $550,000 starting point).
-      </p>
+      <p>NZSki's own 2015 internal risk assessment identified 28 fence posts as likely to cause high-speed collisions. Management approved padding for 9. Eight years later, a skier hit an unpadded post and died.</p>
+      <p>The court convicted NZSki. The hazard was correctly identified, rated, and recorded. The failure was a governance-level decision about resource allocation against a known risk.</p>
+      <div class="case-finding"><strong>What the court measured:</strong> Not whether hazard identification was adequate (it was), but whether the governance response to identified hazards was sufficient. Partial implementation of known controls is a prosecutable decision.</div>
+      <p class="case-outcome">Fine: $440,000 (from $550,000 starting point).</p>
     </div>
-
-    <!-- Pakiri / Earnslaw -->
+    <div class="case-full">
+      <h3>RH and JY Trust v WorkSafe [2026] NZCA 12</h3>
+      <div class="case-meta">Agriculture &middot; Trust prosecuted &middot; Child fatality (farm machinery)</div>
+      <p>The Court of Appeal ruled that trusts can be prosecuted as persons under HSWA and that trustees are &ldquo;officers&rdquo; under Section 44. This extends personal officer liability to the most common ownership structure for NZ farms and family businesses.</p>
+      <div class="case-finding"><strong>What this means:</strong> If your business operates through a trust, every trustee carries the same personal due diligence obligations as a company director. The trust structure does not provide insulation from HSWA officer duties.</div>
+    </div>
     <div class="case-full">
       <h3>WorkSafe v Pakiri Logging + Earnslaw One [2021]</h3>
       <div class="case-meta">Forestry &middot; Two companies charged &middot; Fatality</div>
-      <p>
-        Both companies commissioned external H&amp;S audits in 2018.
-        The audits identified specific safety issues.
-        Neither company took corrective action.
-        In 2019, a worker was killed.
-      </p>
-      <p>
-        Both companies were convicted. The audits were not a defence.
-        They were evidence of constructive knowledge &mdash;
-        proof that the companies knew what needed to be done and did not do it.
-      </p>
-      <div class="case-finding">
-        <strong>What the court measured:</strong>
-        Whether audit findings were closed. A company that holds an external audit
-        and does not implement the findings is in a worse position than one that
-        never audited at all, because it cannot claim ignorance.
-      </div>
-      <p class="case-outcome">
-        Pakiri Logging: $468,000. Earnslaw One: $288,000. Combined reparations: $256,408.
-      </p>
+      <p>Both companies commissioned external H&amp;S audits in 2018. The audits identified specific safety issues. Neither company took corrective action. In 2019, a worker was killed.</p>
+      <p>Both companies were convicted. The audits were not a defence. They were evidence of constructive knowledge &mdash; proof that the companies knew what needed to be done and did not do it.</p>
+      <div class="case-finding"><strong>What the court measured:</strong> Whether audit findings were closed. A company that holds an external audit and does not implement the findings is in a worse position than one that never audited at all, because it cannot claim ignorance.</div>
+      <p class="case-outcome">Pakiri Logging: $468,000. Earnslaw One: $288,000. Combined reparations: $256,408.</p>
     </div>
-
-    <!-- Whakaari -->
     <div class="case-full">
       <h3>WorkSafe v Whakaari Management / Buttle Directors [2023]</h3>
       <div class="case-meta">Tourism (volcanic) &middot; Company + directors charged &middot; 22 fatalities</div>
-      <p>
-        Whakaari Management Ltd was convicted. Three Buttle directors were acquitted &mdash;
-        not because their governance was adequate, but because the Crown could not establish
-        sufficient evidence of individual culpability. Operational management of tour activities
-        was diffuse enough that personal responsibility could not be pinned to any one officer.
-      </p>
-      <p>
-        The company conviction was subsequently quashed on appeal on separate grounds
-        (land ownership alone does not trigger the s37 PCBU duty).
-        The officer liability analysis remains unchanged.
-      </p>
-      <div class="case-finding">
-        <strong>What this means for directors:</strong>
-        Officer acquittal required an evidentiary gap in establishing
-        <em>individual</em> culpability. A director of a single operating company &mdash;
-        where control is concentrated, not diffuse &mdash; cannot make the same structural argument.
-        The Buttle acquittal is not a template for how directors escape liability.
-        It is an illustration of how narrow the path is.
-      </div>
-      <p class="case-outcome">
-        Company: $1,045,000 fine + $4.88M reparations (quashed on appeal).
-        Directors: acquitted at close of Crown case.
-      </p>
+      <p>Whakaari Management Ltd was convicted. Three Buttle directors were acquitted &mdash; not because their governance was adequate, but because the Crown could not establish sufficient evidence of individual culpability. Operational management of tour activities was diffuse enough that personal responsibility could not be pinned to any one officer.</p>
+      <p>The company conviction was subsequently quashed on appeal on separate grounds (land ownership alone does not trigger the s37 PCBU duty). The officer liability analysis remains unchanged.</p>
+      <div class="case-finding"><strong>What this means for directors:</strong> Officer acquittal required an evidentiary gap in establishing <em>individual</em> culpability. A director of a single operating company &mdash; where control is concentrated, not diffuse &mdash; cannot make the same structural argument. The Buttle acquittal is not a template for how directors escape liability. It is an illustration of how narrow the path is.</div>
+      <p class="case-outcome">Company: $1,045,000 fine + $4.88M reparations (quashed on appeal). Directors: acquitted at close of Crown case.</p>
     </div>
   </div>
 </section>
-
-<!-- ═══ OTHER NOTABLE CASES ═══ -->
 <section class="section">
   <div class="wrap">
     <div class="section__header">
       <h2>Other Cases That Show the Pattern</h2>
     </div>
-
     <div class="case-full">
       <h3>WorkSafe v Kimberley Tool &amp; Design / Jon-Brian Parker [2021]</h3>
       <div class="case-meta">Manufacturing &middot; Director personally charged &middot; Serious injury (amputation)</div>
-      <p>
-        Three Improvement Notices issued by WorkSafe before the incident.
-        All three unactioned. Press unguarded. No emergency stop. Haphazard training.
-        First successful prosecution and sentencing of a director under HSWA.
-      </p>
-      <p class="case-outcome">
-        Director: $35,000. Company: $120,000. Reparation: $30,000.
-      </p>
+      <p>Three Improvement Notices issued by WorkSafe before the incident. All three unactioned. Press unguarded. No emergency stop. Haphazard training. First successful prosecution and sentencing of a director under HSWA.</p>
+      <p class="case-outcome">Director: $35,000. Company: $120,000. Reparation: $30,000.</p>
     </div>
-
     <div class="case-full">
       <h3>WorkSafe v Waste Management NZ Ltd [2022]</h3>
       <div class="case-meta">Waste management &middot; Company charged &middot; Fatality (H&#x2082;S gas)</div>
-      <p>
-        Five hydrogen sulphide alarms activated and ignored before a worker was overcome.
-        No hazardous substance register. Improper labelling. Inadequate worker instruction.
-        The alarm system existed. The response system did not.
-      </p>
-      <p class="case-outcome">
-        Fine: $450,000. Reparation: $250,000. Consequential loss: $100,000.
-      </p>
+      <p>Five hydrogen sulphide alarms activated and ignored before a worker was overcome. No hazardous substance register. Improper labelling. Inadequate worker instruction. The alarm system existed. The response system did not.</p>
+      <p class="case-outcome">Fine: $450,000. Reparation: $250,000. Consequential loss: $100,000.</p>
     </div>
-
     <div class="case-full">
       <h3>WorkSafe v Car Haulaways Limited [2021]</h3>
       <div class="case-meta">Transport/Logistics &middot; Company charged &middot; Fatality (fall from height)</div>
-      <p>
-        Wire ropes severely corroded. Four recorded falls from heights in 2017&ndash;2018.
-        None escalated to remediation. Inadequate inspection and maintenance systems.
-        The incidents were recorded. The response loop was absent.
-      </p>
-      <p class="case-outcome">
-        Fine: $279,000. Reparation: $90,000.
-      </p>
+      <p>Wire ropes severely corroded. Four recorded falls from heights in 2017&ndash;2018. None escalated to remediation. Inadequate inspection and maintenance systems. The incidents were recorded. The response loop was absent.</p>
+      <p class="case-outcome">Fine: $279,000. Reparation: $90,000.</p>
     </div>
-
     <div class="case-full">
       <h3>WorkSafe v CentrePort Limited [2019]</h3>
       <div class="case-meta">Ports &middot; Company charged &middot; Fatality (fall from ladder)</div>
-      <p>
-        Safe procedures existed on paper but were not implemented.
-        Ladders not tied off, in poor condition, no edge protection &mdash;
-        despite documented procedures requiring these controls.
-        Prior WorkSafe conviction cited as an aggravating factor.
-      </p>
-      <p class="case-outcome">
-        Fine: $506,048. Costs: $36,425. Reparation: $170,000. Consequential loss: $85,952.
-      </p>
+      <p>Safe procedures existed on paper but were not implemented. Ladders not tied off, in poor condition, no edge protection &mdash; despite documented procedures requiring these controls. Prior WorkSafe conviction cited as an aggravating factor.</p>
+      <p class="case-outcome">Fine: $506,048. Costs: $36,425. Reparation: $170,000. Consequential loss: $85,952.</p>
     </div>
-
     <div class="case-full">
       <h3>WorkSafe v Safe Business Solutions Ltd [2024]</h3>
       <div class="case-meta">H&amp;S consulting &middot; Consultant company charged &middot; Serious injury</div>
-      <p>
-        The first prosecution of an H&amp;S consultancy as a PCBU.
-        The consultant promised and failed to deliver a traffic management plan.
-        A worker was struck by a telehandler. Conviction upheld on appeal.
-      </p>
-      <div class="case-finding">
-        <strong>What this means:</strong>
-        Even your H&amp;S consultant carries PCBU obligations.
-        But their conviction does not reduce yours.
-        Two parties can be liable for the same event.
-      </div>
-      <p class="case-outcome">
-        Consultant company fined approximately $70,000.
-      </p>
-    </div>
-
-    <div class="case-full">
-      <h3>RH and JY Trust v WorkSafe [2026] NZCA 12</h3>
-      <div class="case-meta">Agriculture &middot; Trust prosecuted &middot; Child fatality (farm machinery)</div>
-      <p>
-        The Court of Appeal ruled that trusts can be prosecuted as persons under HSWA
-        and that trustees are &ldquo;officers&rdquo; under Section 44.
-        This extends personal officer liability to the most common
-        ownership structure for NZ farms and family businesses.
-      </p>
-      <div class="case-finding">
-        <strong>What this means:</strong>
-        If your business operates through a trust, every trustee
-        carries the same personal due diligence obligations as a company director.
-        The trust structure does not provide insulation from HSWA officer duties.
-      </div>
+      <p>The first prosecution of an H&amp;S consultancy as a PCBU. The consultant promised and failed to deliver a traffic management plan. A worker was struck by a telehandler. Conviction upheld on appeal.</p>
+      <div class="case-finding"><strong>What this means:</strong> Even your H&amp;S consultant carries PCBU obligations. But their conviction does not reduce yours. Two parties can be liable for the same event.</div>
+      <p class="case-outcome">Consultant company fined approximately $70,000.</p>
     </div>
   </div>
 </section>
-
-<!-- ═══ WHAT THIS MEANS ═══ -->
 <section class="dark-section">
   <div class="wrap">
     <div class="section__header">
       <h2>What This Means for Directors</h2>
     </div>
     <div class="prose">
-      <p>
-        The prosecution record does not support the assumption that
-        good intentions or reasonable investment in safety provides protection.
-      </p>
-      <p>
-        Directors are not convicted for being negligent people.
-        They are convicted because the governance system they believed was working
-        and the governance system the court reconstructed were not the same thing.
-      </p>
-      <p>
-        That gap &mdash; between internal experience and external reconstruction &mdash;
-        is what the H&amp;S Stress Test is designed to reveal. Before scrutiny arrives.
-      </p>
-      <p>
-        <strong>You have never seen how an investigator would reconstruct
-        your governance. The Stress Test shows you.</strong>
-      </p>
+      <p>The prosecution record does not support the assumption that good intentions or reasonable investment in safety provides protection.</p>
+      <p>Directors are not convicted for being negligent people. They are convicted because the governance system they believed was working and the governance system the court reconstructed were not the same thing.</p>
+      <p>That gap &mdash; between internal experience and external reconstruction &mdash; is what the H&amp;S Stress Test is designed to reveal. Before scrutiny arrives.</p>
+      <p><strong>You have never seen how an investigator would reconstruct your governance. The Stress Test shows you.</strong></p>
     </div>
-    <p class="back-link" style="margin-top:24px">
-      <a href="https://tpea.co.nz/hs-stress-test.html" style="color:rgba(255,255,255,.8)">&larr; Back to H&amp;S Stress Test</a>
-    </p>
+    <p class="back-link" style="margin-top:24px"><a href="https://tpea.co.nz/hs-stress-test.html" style="color:rgba(255,255,255,.8)">&larr; Back to H&amp;S Stress Test</a></p>
   </div>
 </section>
-
-<!-- ═══ SOURCE NOTE ═══ -->
 <section class="section">
   <div class="wrap">
-    <p class="source-note">
-      All cases referenced are matters of public record.
-      Sources include WorkSafe NZ prosecution outcomes, District Court judgments,
-      and published legal commentary from Russell McVeagh, MinterEllisonRuddWatts,
-      Bell Gully, Hesketh Henry, and Simpson Grierson.
-    </p>
+    <p class="source-note">All cases referenced are matters of public record. Sources include WorkSafe NZ prosecution outcomes, District Court judgments, and published legal commentary from Russell McVeagh, MinterEllisonRuddWatts, Bell Gully, Hesketh Henry, and Simpson Grierson.</p>
   </div>
 </section>
-
 </main>
-
-<!-- FOOTER -->
 <footer class="footer">
   <div class="wrap footer__inner">
     <span>&copy; The Private Equity Advantage &middot; Auckland, New Zealand</span>
@@ -478,6 +238,5 @@
     </div>
   </div>
 </footer>
-
 </body>
 </html>
